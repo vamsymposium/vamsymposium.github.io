@@ -86,8 +86,7 @@ These were inferred from the planning documents and need a real decision:
   distilled from ~45 papers (2024–2026); `#reading` lists them by topic with a 2026 badge,
   and the same eight topics are the poster categories on the Attend page. All of this is
   data in `_private/speakers.py` (`TOPICS`). Links go to Consensus; swap for DOIs if preferred.
-- **2025 speaker tiles** (archive page) still render initials on a flat colour. Add photos
-  the same way if you have them.
+- **2025 speakers** (archive page) are a text roster grouped by session; no photos.
 
 ## Design
 
@@ -116,6 +115,7 @@ Light only; every colour is painted explicitly.
 | `gallery-raft-thinker.jpg` | Krumins et al., *Nat. Commun.* 2026, Fig. 4 (crop) | CC BY 4.0 |
 | `gallery-holovam-benchy.jpg` | Álvarez-Castaño et al., *Nat. Commun.* 2025, Fig. 6 (crop) | CC BY 4.0 |
 | `gallery-emvp-lattice.jpg` | Tisato et al., *Nat. Commun.* 2025, Fig. 2 (crop) | CC BY 4.0 |
+| `venue-berkeley.jpg` | Memorial Glade, Wikimedia Commons (Firstcultural) | CC0 |
 | `speakers/hayden-taylor.jpg` | me.berkeley.edu faculty page | Berkeley ME |
 
 Replace the OpenCAL shots with your own lab photography when you have it — a photo of
