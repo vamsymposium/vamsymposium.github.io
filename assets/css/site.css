@@ -197,7 +197,7 @@ img { max-width: 100%; height: auto; display: block; }
 .card--c2 { border-top-color: var(--teal); }
 .card--c3 { border-top-color: var(--navy-3); }
 .card--c4 { border-top-color: var(--navy); }
-.card__img { width: calc(100% + 2 * clamp(1.2rem, 2.2vw, 1.6rem)); margin: calc(-1 * clamp(1.2rem, 2.2vw, 1.6rem)) calc(-1 * clamp(1.2rem, 2.2vw, 1.6rem)) 1.1rem; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius) var(--radius) 0 0; border-bottom: 1px solid var(--line); }
+.card__img { max-width: none; width: calc(100% + 2 * clamp(1.2rem, 2.2vw, 1.6rem)); margin: calc(-1 * clamp(1.2rem, 2.2vw, 1.6rem)) calc(-1 * clamp(1.2rem, 2.2vw, 1.6rem)) 1.1rem; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius) var(--radius) 0 0; border-bottom: 1px solid var(--line); }
 
 .tag-list { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: 1rem; }
 .tag { font-size: .72rem; font-weight: 600; padding: .22rem .6rem; border-radius: 999px; background: var(--bg-alt); border: 1px solid var(--line); color: var(--muted); }
