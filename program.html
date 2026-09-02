@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Program | VAM Symposium 2027</title>
+<meta name="description" content="Provisional program for the VAM Symposium 2027 at UC Berkeley: plenary talks, three panels, posters, and lab tours on February 4, followed by the OpenCAL build workshop on February 5.">
+<meta property="og:title" content="Program | VAM Symposium 2027">
+<meta property="og:description" content="Provisional program for the VAM Symposium 2027 at UC Berkeley: plenary talks, three panels, posters, and lab tours on February 4, followed by the OpenCAL build workshop on February 5.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="17" fill="#F5B437" stroke="#16243F" stroke-width="2.5"/>
+        <path d="M6 13.5h28M4 20h32M6 26.5h28" stroke="#16243F" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="5.5" fill="#E8493B" stroke="#16243F" stroke-width="2.5"/>
+      </svg>
+      <span>VAM Symposium</span>
+      <span class="brand__sub">2027</span>
+    </a>
+    <button class="nav__toggle" type="button" aria-controls="nav-links" aria-expanded="false">Menu</button>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="program.html" aria-current="page">Program</a></li>
+      <li><a href="program.html#speakers">Speakers</a></li>
+      <li><a href="attend.html">Attend</a></li>
+      <li><a href="attend.html#venue">Venue</a></li>
+      <li><a href="archive.html">Past Symposia</a></li>
+      <li><a class="btn btn--primary btn--sm" href="attend.html#register">Pre-register</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="pagehead">
+  <div class="wrap">
+    <p class="eyebrow">February 4&ndash;5, 2027 &middot; UC Berkeley</p>
+    <h1>Program</h1>
+    <p class="lede">One day of talks, panels, and posters, followed by one day of hands-on building. The schedule below is provisional; speakers and session titles are confirmed on a rolling basis through fall 2026.</p>
+  </div>
+</section>
+
+<section class="section" id="glance">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">At a glance</p>
+      <h2>Program overview</h2>
+    </div>
+    <div class="glance table-scroll">
+      <table>
+        <thead><tr><th>Time (PST)</th><th>Thursday, February 4 &middot; Symposium</th><th>Friday, February 5 &middot; Build workshop</th></tr></thead>
+        <tbody>
+          <tr><td>9:00 AM</td><td>Check-in and coffee</td><td>Check-in and kit distribution</td></tr>
+          <tr><td>9:30 AM</td><td>Plenary talk I</td><td rowspan="3">Mechanical assembly and optical alignment</td></tr>
+          <tr><td>10:30 AM</td><td>Panel 1: Making advanced VAM widely accessible</td></tr>
+          <tr class="is-break"><td>11:30 AM</td><td>Lunch, posters, and lab tours</td></tr>
+          <tr><td>1:15 PM</td><td>Panel 2: Lessons from adjacent fields</td><td rowspan="3">Calibration, first prints, and troubleshooting</td></tr>
+          <tr><td>2:15 PM</td><td>Plenary talk II</td></tr>
+          <tr><td>3:30 PM</td><td>Panel 3: Machine learning in VAM</td></tr>
+          <tr><td>4:30 PM</td><td>Open discussion</td><td>Closing round table</td></tr>
+          <tr><td>5:00 PM</td><td>Reception</td><td>Departure</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small mt-1">All times Pacific Standard Time. Day 1 is available virtually to registered participants; Day 2 is in-person only.</p>
+  </div>
+</section>
+
+<section class="section" id="topics">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Topic areas</p>
+      <h2>Where the field is moving</h2>
+      <p class="lede">Eight topic areas distilled from roughly forty-five papers published between 2024 and 2026. They organize the panels, the poster session, and the reading list below. Posters may be submitted under any topic.</p>
+    </div>
+    <div class="grid grid--2">
+      <a class="card card--c2 card--link" href="#reading-light">
+        <p class="card__num">Topic 01</p>
+        <h3>Light engines and holography</h3>
+        <p>Phase-modulated and holographic projection is replacing amplitude-only DMD patterning: higher photon efficiency, diffraction-limited features, and new geometries such as lensless and single-view systems.</p>
+        <div class="tag-list"><span class="tag">Phase light modulators</span><span class="tag">Holographic VAM</span><span class="tag">Single-exposure</span><span class="tag">Lensless</span></div>
+        <span class="card__more">7 papers, 6 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c4 card--link" href="#reading-compute">
+        <p class="card__num">Topic 02</p>
+        <h3>Projection computation and inverse design</h3>
+        <p>Pattern generation has become a differentiable inverse problem: physically based ray tracing and wave optics that account for scattering, occlusions, refraction, and chemical blur.</p>
+        <div class="tag-list"><span class="tag">Differentiable rendering</span><span class="tag">Wave optics</span><span class="tag">Overprinting</span><span class="tag">Open frameworks</span></div>
+        <span class="card__more">7 papers, 4 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c1 card--link" href="#reading-chem">
+        <p class="card__num">Topic 03</p>
+        <h3>Photochemistry and resin design</h3>
+        <p>Oxygen inhibition, exotherm, viscosity, and dose window are the practical limits on fidelity and size. New chemistries widen the window: inhibition control, RAFT, thiol-ene, and self-assembling macromers.</p>
+        <div class="tag-list"><span class="tag">Oxygen inhibition</span><span class="tag">RAFT</span><span class="tag">Low viscosity</span><span class="tag">Dual-color</span></div>
+        <span class="card__more">8 papers, 6 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c3 card--link" href="#reading-control">
+        <p class="card__num">Topic 04</p>
+        <h3>Process monitoring, metrology, and control</h3>
+        <p>Closing the loop: in-situ imaging to end exposure automatically, map substrates for overprinting, and characterize parts while they print, so results stop depending on the operator.</p>
+        <div class="tag-list"><span class="tag">Auto-exposure</span><span class="tag">In-situ metrology</span><span class="tag">Closed loop</span><span class="tag">Repeatability</span></div>
+        <span class="card__more">7 papers, 6 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c2 card--link" href="#reading-scale">
+        <p class="card__num">Topic 05</p>
+        <h3>Scale, throughput, and production</h3>
+        <p>From one part per vial to manufacturing: thermal management for large volumes, droplet-based serial printing, roll-to-roll, hybrid multiscale platforms, and the operations research behind them.</p>
+        <div class="tag-list"><span class="tag">Large volume</span><span class="tag">Serial production</span><span class="tag">Roll-to-roll</span><span class="tag">Multiscale</span></div>
+        <span class="card__more">6 papers, 4 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c1 card--link" href="#reading-materials">
+        <p class="card__num">Topic 06</p>
+        <h3>Materials beyond acrylates</h3>
+        <p>Glass, silicones, fluoropolymers, foams, and composites: routes that keep the resin transparent during printing and add function afterward, plus optics-grade surfaces.</p>
+        <div class="tag-list"><span class="tag">Glass</span><span class="tag">Silicone</span><span class="tag">Micro-optics</span><span class="tag">Recyclable</span><span class="tag">Composites</span></div>
+        <span class="card__more">8 papers, 4 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c3 card--link" href="#reading-bio">
+        <p class="card__num">Topic 07</p>
+        <h3>Biofabrication</h3>
+        <p>Cell-laden printing at tissue-relevant densities: scattering-aware patterning, refractive-index matching, printing directly inside microfluidic chips, and light-controlled biology after the print.</p>
+        <div class="tag-list"><span class="tag">Volumetric bioprinting</span><span class="tag">Xolography</span><span class="tag">Organ-on-chip</span><span class="tag">High cell density</span></div>
+        <span class="card__more">8 papers, 5 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c4 card--link" href="#reading-open">
+        <p class="card__num">Topic 08</p>
+        <h3>Open hardware, reproducibility, and education</h3>
+        <p>Making the technology buildable outside the founding labs: open printers and post-processors, open computation frameworks, shared calibration methods, and the community that maintains them.</p>
+        <div class="tag-list"><span class="tag">OpenCAL</span><span class="tag">Open frameworks</span><span class="tag">Calibration</span><span class="tag">Community</span></div>
+        <span class="card__more">5 papers, 2 from 2026 &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="day1">
+  <div class="wrap">
+    <div class="notice" style="margin-bottom:clamp(2rem,4vw,3rem)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.01"/></svg>
+      <div><strong>Provisional schedule.</strong> Session times follow the format used in previous years. Speakers and session titles will be updated as they are confirmed. <a href="attend.html#register">Pre-register</a> to be notified when the final program is published.</div>
+    </div>
+
+    <div class="daybar">
+      <h3>Day 1: Symposium</h3>
+      <span>Thursday, February 4, 2027 &middot; 9:00 AM &ndash; 6:00 PM PST</span>
+    </div>
+    <div class="sched">
+
+      <div class="sched__row sched__row--break">
+        <div class="sched__time">9:00 &ndash; 9:25 AM</div>
+        <div>
+          <h4 class="sched__title">Check-in, coffee, and pastries</h4>
+          <p class="sched__meta">Registration desk opens. Poster boards available for setup.</p>
+        </div>
+      </div>
+
+      <div class="sched__row">
+        <div class="sched__time">9:25 &ndash; 9:30 AM</div>
+        <div>
+          <h4 class="sched__title">Welcome and opening remarks</h4>
+          <p class="sched__meta">Organizing committee</p>
+        </div>
+      </div>
+
+      <div class="sched__row">
+        <div class="sched__time">9:30 &ndash; 10:15 AM</div>
+        <div>
+          <h4 class="sched__title">Plenary talk I</h4>
+          <p class="sched__meta">Speaker to be announced.</p>
+        </div>
+      </div>
+
+      <div class="sched__row sched__row--break">
+        <div class="sched__time">10:15 &ndash; 10:30 AM</div>
+        <div>
+          <h4 class="sched__title">Break</h4>
+        </div>
+      </div>
+
+      <div class="sched__row">
+        <div class="sched__time">10:30 &ndash; 11:30 AM</div>
+        <div>
+          <h4 class="sched__title">Panel 1: Making advanced VAM widely accessible</h4>
+          <p class="sched__meta">What distinguishes laboratories that print reliably from those that do not, and what the community can standardize, document, and share to close the gap. Includes perspectives from established open-source hardware projects.</p>
+        </div>
+      </div>
+
+      <div class="sched__row sched__row--break">
+        <div class="sched__time">11:30 AM &ndash; 1:15 PM</div>
+        <div>
+          <h4 class="sched__title">Lunch, poster session, and lab tours</h4>
+          <p class="sched__meta">Catered lunch. Posters remain on display all day; this is the attended session. Optional tours of the Berkeley VAM laboratory run in small groups. <a href="attend.html#posters">Submit a poster</a>.</p>
+        </div>
+      </div>
+
+      <div class="sched__row">
+        <div class="sched__time">1:15 &ndash; 2:15 PM</div>
+        <div>
+          <h4 class="sched__title">Panel 2: Lessons from adjacent fields</h4>
+          <p class="sched__meta">Holographic and phase-modulated light engines, differentiable and wave-optical projection computation, and source-mask optimization from semiconductor lithography. Practitioners from photonics, display engineering, and computational imaging discuss what transfers to volumetric printing.</p>
+        </div>
+      </div>
+
+      <div class="sched__row">
+        <div class="sched__time">2:15 &ndash; 3:00 PM</div>
+        <div>
+          <h4 class="sched__title">Plenary talk II</h4>
+          <p class="sched__meta">Speaker to be announced.</p>
+        </div>
+      </div>
+
+      <div class="sched__row sched__row--break">
+        <div class="sched__time">3:00 &ndash; 3:30 PM</div>
+        <div>
+          <h4 class="sched__title">Break</h4>
+        </div>
+      </div>
+
+      <div class="sched__row">
+        <div class="sched__time">3:30 &ndash; 4:30 PM</div>
+        <div>
+          <h4 class="sched__title">Panel 3: Machine learning in VAM</h4>
+          <p class="sched__meta">Automatic exposure and in-situ monitoring, learned and physics-based dose optimization, closed-loop control, and data-driven resin and material discovery, including where conventional optimization remains preferable.</p>
+        </div>
+      </div>
+
+      <div class="sched__row">
+        <div class="sched__time">4:30 &ndash; 5:00 PM</div>
+        <div>
+          <h4 class="sched__title">Open discussion</h4>
+          <p class="sched__meta">Moderated whole-room discussion.</p>
+        </div>
+      </div>
+
+      <div class="sched__row">
+        <div class="sched__time">5:00 &ndash; 6:00 PM</div>
+        <div>
+          <h4 class="sched__title">Reception</h4>
+          <p class="sched__meta">Drinks and refreshments on site.</p>
+        </div>
+      </div>
+
+      <div class="sched__row sched__row--break">
+        <div class="sched__time">Evening</div>
+        <div>
+          <h4 class="sched__title">Optional group dinner</h4>
+          <p class="sched__meta">Off campus, self-funded. Sign-up at the registration desk.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="day2">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Day 2 &middot; Friday, February 5</p>
+      <h2>OpenCAL build workshop</h2>
+      <p class="lede">Five to ten teams spend the day assembling an <a href="https://github.com/OpenCAL-Project" rel="noopener">OpenCAL</a> volumetric printer from a kit and leave with a working machine. The workshop is intended for groups that want to begin volumetric printing in their own laboratory.</p>
+    </div>
+
+    <div class="grid grid--3" style="margin-bottom:clamp(2rem,4vw,3rem)">
+      <div class="card card--muted">
+        <h3>Who it is for</h3>
+        <p>Research groups, teaching laboratories, and makerspaces. No prior VAM experience is required; familiarity with optical benches and Python is helpful. Teams of two to four.</p>
+      </div>
+      <div class="card card--muted">
+        <h3>What you receive</h3>
+        <p>A calibrated OpenCAL printer, the bill of materials and build documentation, the control and reconstruction software, and a first printed part.</p>
+      </div>
+      <div class="card card--muted">
+        <h3>Cost</h3>
+        <p>The organizers are seeking funding to subsidize approximately ten kits at roughly $1,500 each. Final pricing will be announced with the call for applications.</p>
+      </div>
+    </div>
+
+    <div class="daybar">
+      <h3>Day 2: Build workshop</h3>
+      <span>Friday, February 5, 2027 &middot; Full day &middot; Limited places</span>
+    </div>
+    <div class="sched">
+
+      <div class="sched__row">
+        <div class="sched__time">Morning</div>
+        <div>
+          <h4 class="sched__title">Kit unboxing, mechanical assembly, and optical alignment</h4>
+          <p class="sched__meta">Teams of two to four work through the OpenCAL build with facilitators available throughout. Alignment of the projection path receives the most time.</p>
+        </div>
+      </div>
+
+      <div class="sched__row">
+        <div class="sched__time">Afternoon</div>
+        <div>
+          <h4 class="sched__title">Calibration, first prints, and troubleshooting</h4>
+          <p class="sched__meta">Rotation-axis calibration, dose characterization, and a first printed part from each machine. Closing round table on OpenCAL development priorities.</p>
+        </div>
+      </div>
+
+      <div class="sched__row sched__row--break">
+        <div class="sched__time">Departure</div>
+        <div>
+          <h4 class="sched__title">Take your printer home</h4>
+          <p class="sched__meta">Teams leave with the printer they built, the build documentation, and the control and reconstruction software.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="btn-row mt-2">
+      <a class="btn btn--primary" href="attend.html#workshop">How to apply</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="speakers">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Speakers</p>
+      <h2>Plenary speakers and panelists</h2>
+      <p class="lede">The 2027 lineup will be announced in fall 2026. In addition to researchers in volumetric printing, the organizers are inviting experts from open-source hardware, photonics, display engineering, and semiconductor lithography to address this year's themes.</p>
+    </div>
+    <div class="notice notice--warn" style="margin-bottom:clamp(2rem,4vw,3rem)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 10v4M12 17.5v.01"/></svg>
+      <div><strong>Placeholder lineup.</strong> Hayden Taylor appears in every slot while the page layout is finalized. Confirmed 2027 speakers will replace these entries as invitations are accepted.</div>
+    </div>
+
+    <h3 class="speakers__group">Plenary speakers</h3>
+    <div class="speakers speakers--plenary">
+      <article class="speaker speaker--plenary">
+        <img class="speaker__photo" src="assets/img/speakers/hayden-taylor.jpg" alt="Hayden Taylor" width="300" height="300" loading="lazy">
+        <div class="speaker__body">
+          <p class="speaker__role">Plenary talk I</p>
+          <h3 class="speaker__name">Hayden Taylor</h3>
+          <p class="speaker__affil">Professor and Vice Chair of Instruction, Mechanical Engineering<br>University of California, Berkeley</p>
+          <details class="speaker__bio">
+            <summary>Biography</summary>
+            <p>Hayden Taylor leads the Design for Emerging and Nanoscale Manufacturing group at UC Berkeley, which introduced Computed Axial Lithography (CAL), the tomographic volumetric printing process on which much of the field builds. The group works on materials and computation for multiscale additive manufacturing, contact mechanics in semiconductor manufacturing, and materials for sustainable construction. He is Associate Director for Academic Matters at the Jacobs Institute for Design Innovation and a co-organizer of the VAM Symposium.</p>
+          </details>
+        </div>
+      </article>
+      <article class="speaker speaker--plenary">
+        <img class="speaker__photo" src="assets/img/speakers/hayden-taylor.jpg" alt="Hayden Taylor" width="300" height="300" loading="lazy">
+        <div class="speaker__body">
+          <p class="speaker__role">Plenary talk II</p>
+          <h3 class="speaker__name">Hayden Taylor</h3>
+          <p class="speaker__affil">Professor and Vice Chair of Instruction, Mechanical Engineering<br>University of California, Berkeley</p>
+          <details class="speaker__bio">
+            <summary>Biography</summary>
+            <p>Hayden Taylor leads the Design for Emerging and Nanoscale Manufacturing group at UC Berkeley, which introduced Computed Axial Lithography (CAL), the tomographic volumetric printing process on which much of the field builds. The group works on materials and computation for multiscale additive manufacturing, contact mechanics in semiconductor manufacturing, and materials for sustainable construction. He is Associate Director for Academic Matters at the Jacobs Institute for Design Innovation and a co-organizer of the VAM Symposium.</p>
+          </details>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="speakers__group mt-3">Panel moderators and panelists</h3>
+    <div class="speakers">
+      <article class="speaker speaker--moderator">
+        <img class="speaker__photo" src="assets/img/speakers/hayden-taylor.jpg" alt="Hayden Taylor" width="300" height="300" loading="lazy">
+        <div class="speaker__body">
+          <p class="speaker__role">Panel 1 moderator</p>
+          <h3 class="speaker__name">Hayden Taylor</h3>
+          <p class="speaker__affil">Professor and Vice Chair of Instruction, Mechanical Engineering<br>University of California, Berkeley</p>
+          <details class="speaker__bio">
+            <summary>Biography</summary>
+            <p>Hayden Taylor leads the Design for Emerging and Nanoscale Manufacturing group at UC Berkeley, which introduced Computed Axial Lithography (CAL), the tomographic volumetric printing process on which much of the field builds. The group works on materials and computation for multiscale additive manufacturing, contact mechanics in semiconductor manufacturing, and materials for sustainable construction. He is Associate Director for Academic Matters at the Jacobs Institute for Design Innovation and a co-organizer of the VAM Symposium.</p>
+          </details>
+        </div>
+      </article>
+      <article class="speaker speaker--panelist">
+        <img class="speaker__photo" src="assets/img/speakers/hayden-taylor.jpg" alt="Hayden Taylor" width="300" height="300" loading="lazy">
+        <div class="speaker__body">
+          <p class="speaker__role">Panel 1</p>
+          <h3 class="speaker__name">Hayden Taylor</h3>
+          <p class="speaker__affil">Professor and Vice Chair of Instruction, Mechanical Engineering<br>University of California, Berkeley</p>
+          <details class="speaker__bio">
+            <summary>Biography</summary>
+            <p>Hayden Taylor leads the Design for Emerging and Nanoscale Manufacturing group at UC Berkeley, which introduced Computed Axial Lithography (CAL), the tomographic volumetric printing process on which much of the field builds. The group works on materials and computation for multiscale additive manufacturing, contact mechanics in semiconductor manufacturing, and materials for sustainable construction. He is Associate Director for Academic Matters at the Jacobs Institute for Design Innovation and a co-organizer of the VAM Symposium.</p>
+          </details>
+        </div>
+      </article>
+      <article class="speaker speaker--panelist">
+        <img class="speaker__photo" src="assets/img/speakers/hayden-taylor.jpg" alt="Hayden Taylor" width="300" height="300" loading="lazy">
+        <div class="speaker__body">
+          <p class="speaker__role">Panel 1</p>
+          <h3 class="speaker__name">Hayden Taylor</h3>
+          <p class="speaker__affil">Professor and Vice Chair of Instruction, Mechanical Engineering<br>University of California, Berkeley</p>
+          <details class="speaker__bio">
+            <summary>Biography</summary>
+            <p>Hayden Taylor leads the Design for Emerging and Nanoscale Manufacturing group at UC Berkeley, which introduced Computed Axial Lithography (CAL), the tomographic volumetric printing process on which much of the field builds. The group works on materials and computation for multiscale additive manufacturing, contact mechanics in semiconductor manufacturing, and materials for sustainable construction. He is Associate Director for Academic Matters at the Jacobs Institute for Design Innovation and a co-organizer of the VAM Symposium.</p>
+          </details>
+        </div>
+      </article>
+      <article class="speaker speaker--moderator">
+        <img class="speaker__photo" src="assets/img/speakers/hayden-taylor.jpg" alt="Hayden Taylor" width="300" height="300" loading="lazy">
+        <div class="speaker__body">
+          <p class="speaker__role">Panel 2 moderator</p>
+          <h3 class="speaker__name">Hayden Taylor</h3>
+          <p class="speaker__affil">Professor and Vice Chair of Instruction, Mechanical Engineering<br>University of California, Berkeley</p>
+          <details class="speaker__bio">
+            <summary>Biography</summary>
+            <p>Hayden Taylor leads the Design for Emerging and Nanoscale Manufacturing group at UC Berkeley, which introduced Computed Axial Lithography (CAL), the tomographic volumetric printing process on which much of the field builds. The group works on materials and computation for multiscale additive manufacturing, contact mechanics in semiconductor manufacturing, and materials for sustainable construction. He is Associate Director for Academic Matters at the Jacobs Institute for Design Innovation and a co-organizer of the VAM Symposium.</p>
+          </details>
+        </div>
+      </article>
+      <article class="speaker speaker--panelist">
+        <img class="speaker__photo" src="assets/img/speakers/hayden-taylor.jpg" alt="Hayden Taylor" width="300" height="300" loading="lazy">
+        <div class="speaker__body">
+          <p class="speaker__role">Panel 2</p>
+          <h3 class="speaker__name">Hayden Taylor</h3>
+          <p class="speaker__affil">Professor and Vice Chair of Instruction, Mechanical Engineering<br>University of California, Berkeley</p>
+          <details class="speaker__bio">
+            <summary>Biography</summary>
+            <p>Hayden Taylor leads the Design for Emerging and Nanoscale Manufacturing group at UC Berkeley, which introduced Computed Axial Lithography (CAL), the tomographic volumetric printing process on which much of the field builds. The group works on materials and computation for multiscale additive manufacturing, contact mechanics in semiconductor manufacturing, and materials for sustainable construction. He is Associate Director for Academic Matters at the Jacobs Institute for Design Innovation and a co-organizer of the VAM Symposium.</p>
+          </details>
+        </div>
+      </article>
+      <article class="speaker speaker--panelist">
+        <img class="speaker__photo" src="assets/img/speakers/hayden-taylor.jpg" alt="Hayden Taylor" width="300" height="300" loading="lazy">
+        <div class="speaker__body">
+          <p class="speaker__role">Panel 2</p>
+          <h3 class="speaker__name">Hayden Taylor</h3>
+          <p class="speaker__affil">Professor and Vice Chair of Instruction, Mechanical Engineering<br>University of California, Berkeley</p>
+          <details class="speaker__bio">
+            <summary>Biography</summary>
+            <p>Hayden Taylor leads the Design for Emerging and Nanoscale Manufacturing group at UC Berkeley, which introduced Computed Axial Lithography (CAL), the tomographic volumetric printing process on which much of the field builds. The group works on materials and computation for multiscale additive manufacturing, contact mechanics in semiconductor manufacturing, and materials for sustainable construction. He is Associate Director for Academic Matters at the Jacobs Institute for Design Innovation and a co-organizer of the VAM Symposium.</p>
+          </details>
+        </div>
+      </article>
+      <article class="speaker speaker--moderator">
+        <img class="speaker__photo" src="assets/img/speakers/hayden-taylor.jpg" alt="Hayden Taylor" width="300" height="300" loading="lazy">
+        <div class="speaker__body">
+          <p class="speaker__role">Panel 3 moderator</p>
+          <h3 class="speaker__name">Hayden Taylor</h3>
+          <p class="speaker__affil">Professor and Vice Chair of Instruction, Mechanical Engineering<br>University of California, Berkeley</p>
+          <details class="speaker__bio">
+            <summary>Biography</summary>
+            <p>Hayden Taylor leads the Design for Emerging and Nanoscale Manufacturing group at UC Berkeley, which introduced Computed Axial Lithography (CAL), the tomographic volumetric printing process on which much of the field builds. The group works on materials and computation for multiscale additive manufacturing, contact mechanics in semiconductor manufacturing, and materials for sustainable construction. He is Associate Director for Academic Matters at the Jacobs Institute for Design Innovation and a co-organizer of the VAM Symposium.</p>
+          </details>
+        </div>
+      </article>
+      <article class="speaker speaker--panelist">
+        <img class="speaker__photo" src="assets/img/speakers/hayden-taylor.jpg" alt="Hayden Taylor" width="300" height="300" loading="lazy">
+        <div class="speaker__body">
+          <p class="speaker__role">Panel 3</p>
+          <h3 class="speaker__name">Hayden Taylor</h3>
+          <p class="speaker__affil">Professor and Vice Chair of Instruction, Mechanical Engineering<br>University of California, Berkeley</p>
+          <details class="speaker__bio">
+            <summary>Biography</summary>
+            <p>Hayden Taylor leads the Design for Emerging and Nanoscale Manufacturing group at UC Berkeley, which introduced Computed Axial Lithography (CAL), the tomographic volumetric printing process on which much of the field builds. The group works on materials and computation for multiscale additive manufacturing, contact mechanics in semiconductor manufacturing, and materials for sustainable construction. He is Associate Director for Academic Matters at the Jacobs Institute for Design Innovation and a co-organizer of the VAM Symposium.</p>
+          </details>
+        </div>
+      </article>
+      <article class="speaker speaker--panelist">
+        <img class="speaker__photo" src="assets/img/speakers/hayden-taylor.jpg" alt="Hayden Taylor" width="300" height="300" loading="lazy">
+        <div class="speaker__body">
+          <p class="speaker__role">Panel 3</p>
+          <h3 class="speaker__name">Hayden Taylor</h3>
+          <p class="speaker__affil">Professor and Vice Chair of Instruction, Mechanical Engineering<br>University of California, Berkeley</p>
+          <details class="speaker__bio">
+            <summary>Biography</summary>
+            <p>Hayden Taylor leads the Design for Emerging and Nanoscale Manufacturing group at UC Berkeley, which introduced Computed Axial Lithography (CAL), the tomographic volumetric printing process on which much of the field builds. The group works on materials and computation for multiscale additive manufacturing, contact mechanics in semiconductor manufacturing, and materials for sustainable construction. He is Associate Director for Academic Matters at the Jacobs Institute for Design Innovation and a co-organizer of the VAM Symposium.</p>
+          </details>
+        </div>
+      </article>
+    </div>
+
+    <div class="grid grid--2 mt-3">
+      <div class="card card--c1">
+        <p class="card__num">Nominations</p>
+        <h3>Suggest a speaker</h3>
+        <p>Nominations, including self-nominations, are welcome, particularly from disciplines adjacent to volumetric printing.</p>
+        <span class="card__more"><a href="attend.html#propose">Submit a suggestion &rarr;</a></span>
+      </div>
+      <div class="card card--c2">
+        <p class="card__num">Archive</p>
+        <h3>2025 speakers</h3>
+        <p>The 2025 program featured plenary talks from Formlabs and the University of Freiburg and panelists from Align, Stanford, LLNL, XOLO3D, Cornell, Caltech, Vitro3D, and UMC Utrecht.</p>
+        <span class="card__more"><a href="archive.html#speakers-2025">View the 2025 lineup &rarr;</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="reading">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Background reading</p>
+      <h2>Recent advances in volumetric printing</h2>
+      <p class="lede">56 papers from 2024 to 2026 (37 published in 2026), grouped by topic area. Links open the paper record; the list is updated as the program develops.</p>
+    </div>
+    <div class="reading">
+      <div class="reading__group" id="reading-light">
+        <h3><span class="reading__num">01</span> Light engines and holography</h3>
+        <ul class="reading__list">
+        <li><a href="https://consensus.app/papers/details/1f9cbc6205715b85914bfa9292d823f1/?utm_source=claude_desktop" rel="noopener">Sub-second volumetric 3D printing by synthesis of holographic light fields</a> <em class="badge-year">2026</em><span>Wang et al., Nature, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/f87828f2b4615a5e9d35164a7e4f1fbf/?utm_source=claude_desktop" rel="noopener">High-efficiency multi-scale holographic volumetric 3D printing with a phase light modulator</a> <em class="badge-year">2026</em><span>Alvarez-Castano et al., Light: Science &amp; Applications, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/f11321587fcb5ab6bdd57bbb6a776699/?utm_source=claude_desktop" rel="noopener">Single-view holographic volumetric 3D printing with coupled differentiable wave-optical and photochemical optimization</a> <em class="badge-year">2026</em><span>Wechsler et al., ACM Transactions on Graphics, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/cfc568be2a5255fb87309e3c1a564d4e/?utm_source=claude_desktop" rel="noopener">Volumetric fabrication without lenses: lensless HoloVAM</a> <em class="badge-year">2026</em><span>Madsen et al., SPIE, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/23cf27d336ba547a9ac8f77ca189b7ab/?utm_source=claude_desktop" rel="noopener">Single-exposure holographic 3D printing via inverse-designed phase masks</a> <em class="badge-year">2026</em><span>Lin et al., Science Advances, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/1ce5cdfaa29c53089d3d144bb8998cb9/?utm_source=claude_desktop" rel="noopener">Single-exposure holographic lithography of ultra-high aspect-ratio microstructures</a> <em class="badge-year">2026</em><span>Lin et al., Nature Communications, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/092b281fbab45df09af926db5cbdee53/?utm_source=claude_desktop" rel="noopener">Holographic tomographic volumetric additive manufacturing</a><span>Alvarez-Castano et al., Nature Communications, 2025</span></li>
+        </ul>
+      </div>
+      <div class="reading__group" id="reading-compute">
+        <h3><span class="reading__num">02</span> Projection computation and inverse design</h3>
+        <ul class="reading__list">
+        <li><a href="https://consensus.app/papers/details/6a7a731de72f5ecbb0cc79eac223dbef/?utm_source=claude_desktop" rel="noopener">Scale-invariant projection optimization in tomographic volumetric additive manufacturing</a> <em class="badge-year">2026</em><span>Woo et al., 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/b6e33fef13905e059c113595e7bbebfd/?utm_source=claude_desktop" rel="noopener">Penalty-optimised illumination design via the extendable framework TVAM AID</a> <em class="badge-year">2026</em><span>Pellizzon et al., 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/5380b309d73355f0a600d5c05fa4bf31/?utm_source=claude_desktop" rel="noopener">Co-optimization of diffusive and tomographic blur in Computed Axial Lithography</a> <em class="badge-year">2026</em><span>Ye et al., 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/e5ab0cb4f49950038c5865214d2029a8/?utm_source=claude_desktop" rel="noopener">Volumetric additive manufacturing of complex geometries around complex inserts</a> <em class="badge-year">2026</em><span>Bagheri et al., Scientific Reports, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/12299ed133a45962949b583eeb78c857/?utm_source=claude_desktop" rel="noopener">Overprinting with tomographic volumetric additive manufacturing</a><span>Wechsler et al., Nature Communications, 2025</span></li>
+        <li><a href="https://consensus.app/papers/details/134caa080912570cbfddac3abc3a31e7/?utm_source=claude_desktop" rel="noopener">Inverse rendering for tomographic volumetric additive manufacturing</a><span>Nicolet et al., ACM Transactions on Graphics, 2024</span></li>
+        <li><a href="https://consensus.app/papers/details/6f1eff0deec95a5caaad33e0407ad92f/?utm_source=claude_desktop" rel="noopener">Wave optical model for tomographic volumetric additive manufacturing</a><span>Wechsler et al., Optics Express, 2024</span></li>
+        </ul>
+      </div>
+      <div class="reading__group" id="reading-chem">
+        <h3><span class="reading__num">03</span> Photochemistry and resin design</h3>
+        <ul class="reading__list">
+        <li><a href="https://consensus.app/papers/details/f64cfb94a4a353b38bcfe5a8a47c6c44/?utm_source=claude_desktop" rel="noopener">Enhanced volumetric additive manufacturing via RAFT polymerization</a> <em class="badge-year">2026</em><span>Krumins et al., Nature Communications, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/cc76a70335a952e9b92e7a2eecc8a48e/?utm_source=claude_desktop" rel="noopener">The Pandoro effect: oxygen gradients in tomographic volumetric additive manufacturing</a> <em class="badge-year">2026</em><span>Rizzo et al., Biofabrication, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/7ba2b1c58c3b5f808f8554e590a5aef2/?utm_source=claude_desktop" rel="noopener">Mechanically reinforced photo-cross-linked hydrogels with steep post-gelation threshold curing</a> <em class="badge-year">2026</em><span>Yang et al., Advanced Materials, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/e687668a92d454348f696e305a722844/?utm_source=claude_desktop" rel="noopener">Volumetric printing of low viscosity hyaluronic acid resins through fast crosslinking</a> <em class="badge-year">2026</em><span>Steudter et al., Biofabrication, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/b5d18563337553bc9864fb7ce7b468ea/?utm_source=claude_desktop" rel="noopener">Quantifying dual-color photopolymerization in Xolography via Raman spectroscopy</a> <em class="badge-year">2026</em><span>Lange et al., Journal of Polymer Science, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/85af8234ea7c575b863f0794ffb303e0/?utm_source=claude_desktop" rel="noopener">Chemical and mechanical evolution of a VAM resin under high-temperature storage</a> <em class="badge-year">2026</em><span>Hedayati et al., Polymers, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/f4a16cea61605be3a31d2f8b3be1f945/?utm_source=claude_desktop" rel="noopener">Advancing tomographic volumetric printing via oxygen inhibition control</a><span>Zhang et al., Advanced Materials, 2025</span></li>
+        <li><a href="https://consensus.app/papers/details/0ebe7561a21356bcb2f854f460d75ddd/?utm_source=claude_desktop" rel="noopener">Printing of low-viscosity materials using tomographic additive manufacturing</a><span>Webber et al., Additive Manufacturing, 2024</span></li>
+        </ul>
+      </div>
+      <div class="reading__group" id="reading-control">
+        <h3><span class="reading__num">04</span> Process monitoring, metrology, and control</h3>
+        <ul class="reading__list">
+        <li><a href="https://consensus.app/papers/details/33227eb07729587dabbe2d11ff118905/?utm_source=claude_desktop" rel="noopener">Fluorescence profilometry for accurate VAM overprinting</a> <em class="badge-year">2026</em><span>Orth et al., SPIE, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/5dce0ee04bb8588ab1a4d303e631da88/?utm_source=claude_desktop" rel="noopener">Dynamic coherent diffractive imaging for in-situ metrology of volumetric diffractive element printing</a> <em class="badge-year">2026</em><span>Tian et al., CLEO, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/c2b8d7d915e459fb9a459d69b3cd71f9/?utm_source=claude_desktop" rel="noopener">Intensity adjustment of tomographic VAM projection image sets</a> <em class="badge-year">2026</em><span>Kruse et al., SPIE, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/069d7731aa10514286f9f53014283606/?utm_source=claude_desktop" rel="noopener">Eliminating striations in volumetric additive manufacturing via low-temperature processing</a> <em class="badge-year">2026</em><span>Li et al., Materials and Manufacturing Processes, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/6d3f5815d7245b7cbca7eaeddb15b353/?utm_source=claude_desktop" rel="noopener">Effects of visible and UV illumination on accuracy and roughness in dual-color VAM</a> <em class="badge-year">2026</em><span>Hedayati et al., Materials, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/e1231bb7f9fb5e4a84668a018ab8ecb3/?utm_source=claude_desktop" rel="noopener">In situ characterisation of hydrogels via Dynamic Interface Printing</a> <em class="badge-year">2026</em><span>Vidler et al., Advanced Science, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/a3d0f93b4c3b50b9a02144d0c704b311/?utm_source=claude_desktop" rel="noopener">Automatic exposure volumetric additive manufacturing</a><span>Orth et al., Advanced Materials Technologies, 2025</span></li>
+        </ul>
+      </div>
+      <div class="reading__group" id="reading-scale">
+        <h3><span class="reading__num">05</span> Scale, throughput, and production</h3>
+        <ul class="reading__list">
+        <li><a href="https://consensus.app/papers/details/bc642a99dbd452708ba4ecf1f7fb6af1/?utm_source=claude_desktop" rel="noopener">Controlling convection in VAM for large volume structures at extreme throughput</a> <em class="badge-year">2026</em><span>Darkes-Burkey et al., Advanced Functional Materials, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/cff591cffe4c5359a9d3685ee4c61642/?utm_source=claude_desktop" rel="noopener">Dispensing volumetric additive manufacturing</a> <em class="badge-year">2026</em><span>Jeon et al., Advanced Functional Materials, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/17977df22ddf5a9e8730f60012020edf/?utm_source=claude_desktop" rel="noopener">A unified multiscale 3D printer combining tomographic VAM and two-photon polymerization</a> <em class="badge-year">2026</em><span>Unlu et al., 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/accee36e3bc15ebd89439fa48335d448/?utm_source=claude_desktop" rel="noopener">Operational analysis of tomographic VAM systems via discrete event simulation</a> <em class="badge-year">2026</em><span>Leon-Becerra et al., Processes, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/b830ca6551ec5e0683abeddf60b1b2f7/?utm_source=claude_desktop" rel="noopener">Roll-to-roll tomographic volumetric additive manufacturing</a><span>Toombs et al., SPIE, 2024</span></li>
+        <li><a href="https://consensus.app/papers/details/3897f4d18793569c9b0a33e9022ca95f/?utm_source=claude_desktop" rel="noopener">High-fidelity tomographic AM for large-volume and high-attenuation situations</a><span>Chen et al., Additive Manufacturing, 2024</span></li>
+        </ul>
+      </div>
+      <div class="reading__group" id="reading-materials">
+        <h3><span class="reading__num">06</span> Materials beyond acrylates</h3>
+        <ul class="reading__list">
+        <li><a href="https://consensus.app/papers/details/51f55766afe0571782471bf6bdad4443/?utm_source=claude_desktop" rel="noopener">Volumetric 3D printing of a fluoropolymer with closed-loop chemical recycling</a> <em class="badge-year">2026</em><span>Thijssen et al., Nature Communications, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/fcb9dbea436e5db9a30450b48c1bf627/?utm_source=claude_desktop" rel="noopener">Volumetric AM of dormant catalytic chemistries for silicone fluidic devices and instant molds</a> <em class="badge-year">2026</em><span>Vandenbrande et al., Advanced Science, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/ce916770124e5eda9e4f1a3236791952/?utm_source=claude_desktop" rel="noopener">Additive manufacturing of transparent glass from liquid silica resin</a> <em class="badge-year">2026</em><span>Bauerlin et al., SPIE, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/69cc4e2a268d5124820e59d766fbce9b/?utm_source=claude_desktop" rel="noopener">New etendue configurations for next-generation blurred tomography and micro-optics</a> <em class="badge-year">2026</em><span>Webber et al., SPIE, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/035ac24fba075b98927198475e6b2ec9/?utm_source=claude_desktop" rel="noopener">Tomographic volumetric additive manufacturing of silica glass</a><span>de Beer et al., Advanced Materials Technologies, 2025</span></li>
+        <li><a href="https://consensus.app/papers/details/a752a43f46145e29ba6333d7cc9d83ef/?utm_source=claude_desktop" rel="noopener">A thermally expandable resin for VAM of shape-memory functional foams</a><span>Tisato et al., Advanced Materials Technologies, 2025</span></li>
+        <li><a href="https://consensus.app/papers/details/b1357d2c56d45f39bb59436932fece0d/?utm_source=claude_desktop" rel="noopener">Volumetric additive manufacturing of composites via hydrogel infusion</a><span>Ji et al., ACS Materials Letters, 2025</span></li>
+        <li><a href="https://consensus.app/papers/details/354242af082d54efaf71e3feab5e96bd/?utm_source=claude_desktop" rel="noopener">Micro-optics fabrication using blurred tomography</a><span>Webber et al., Optica, 2024</span></li>
+        </ul>
+      </div>
+      <div class="reading__group" id="reading-bio">
+        <h3><span class="reading__num">07</span> Biofabrication</h3>
+        <ul class="reading__list">
+        <li><a href="https://consensus.app/papers/details/32d99bd148dd51ada988108f434310b6/?utm_source=claude_desktop" rel="noopener">Overcoming scattering in high-cell-density tomographic volumetric bioprinting</a> <em class="badge-year">2026</em><span>Zhang et al., 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/6e3a25ebb931531caa3aa5be42244dd1/?utm_source=claude_desktop" rel="noopener">Tomographic printing in a chip: a platform for biomimetic 3D organ-on-chip</a> <em class="badge-year">2026</em><span>Rizzo et al., 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/52ff77ad35f859a3a93ad96eb55580df/?utm_source=claude_desktop" rel="noopener">Spatial control of light-responsive proteins and optogenetics within hydrogels via volumetric bioprinting</a> <em class="badge-year">2026</em><span>Ribezzi et al., 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/01c34b992f065f469e6a57fe3c448d65/?utm_source=claude_desktop" rel="noopener">Cell-dense bioink design for Xolography: refractive index-matching with increased photoreactivity</a> <em class="badge-year">2026</em><span>Balciunaite et al., 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/da0ba65718445330b3bc0f0b1c1d9857/?utm_source=claude_desktop" rel="noopener">Green volumetric bioprinting with light-scattering microalgae</a> <em class="badge-year">2026</em><span>Windisch et al., Trends in Biotechnology, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/3ed6d1d0b95d5f2a88cb95e6ee05a217/?utm_source=claude_desktop" rel="noopener">Bioxolography enables rapid high-resolution volumetric 3D printing of living matter</a><span>Wolfel et al., Advanced Materials, 2025</span></li>
+        <li><a href="https://consensus.app/papers/details/da2c9a6f6fbf507aa1fa27b823f4f0ba/?utm_source=claude_desktop" rel="noopener">Multi-material volumetric bioprinting and plug-and-play suspension bath biofabrication</a><span>Ribezzi et al., Advanced Materials, 2025</span></li>
+        <li><a href="https://consensus.app/papers/details/9303fcca9fe85b11b36bf57b43237806/?utm_source=claude_desktop" rel="noopener">Xolography for biomedical applications: dual-color light-sheet printing of hydrogels</a><span>Stoecker et al., Advanced Materials, 2025</span></li>
+        </ul>
+      </div>
+      <div class="reading__group" id="reading-open">
+        <h3><span class="reading__num">08</span> Open hardware, reproducibility, and education</h3>
+        <ul class="reading__list">
+        <li><a href="https://arxiv.org/abs/2509.02865" rel="noopener">An open-sourced, community-driven volumetric additive manufacturing printer and post-processor</a><span>arXiv, 2025</span></li>
+        <li><a href="https://consensus.app/papers/details/b6e33fef13905e059c113595e7bbebfd/?utm_source=claude_desktop" rel="noopener">Penalty-optimised illumination design via the extendable framework TVAM AID (open-source, Core Imaging Library)</a> <em class="badge-year">2026</em><span>Pellizzon et al., 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/12299ed133a45962949b583eeb78c857/?utm_source=claude_desktop" rel="noopener">Overprinting with tomographic VAM using the open-source Dr.TVAM framework</a><span>Wechsler et al., Nature Communications, 2025</span></li>
+        <li><a href="https://consensus.app/papers/details/e3b9aaa3ec385da2a1b94a2cac1f3ce8/?utm_source=claude_desktop" rel="noopener">Technological progress and challenges of volumetric additive manufacturing technology (review)</a> <em class="badge-year">2026</em><span>Zhang et al., Virtual and Physical Prototyping, 2026</span></li>
+        <li><a href="https://consensus.app/papers/details/1eed720fb3b557d094aad1269b1ffea5/?utm_source=claude_desktop" rel="noopener">Light from afield: fast, high-resolution, and layer-free deep vat 3D printing (review)</a><span>Chansoria et al., Chemical Reviews, 2024</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <h2>Frequently asked questions</h2>
+    <div class="faq mt-2">
+      <details>
+        <summary>Is there a virtual option?</summary>
+        <p>Yes, for Day 1. A video link is sent to registered participants who indicate virtual attendance. The Day 2 build workshop is in-person only.</p>
+      </details>
+      <details>
+        <summary>Will talks be recorded?</summary>
+        <p>Recording is at each speaker's discretion. Where permission is granted, recordings are posted to the archive after the event.</p>
+      </details>
+      <details>
+        <summary>Can I present a poster?</summary>
+        <p>Yes. The call for posters opens with registration in fall 2026. See <a href="attend.html#posters">call for posters</a> for guidelines.</p>
+      </details>
+      <details>
+        <summary>Do I have to attend both days?</summary>
+        <p>No. Day 1 and the Day 2 build workshop are registered separately. The workshop has limited places allocated by application.</p>
+      </details>
+      <details>
+        <summary>How does the symposium relate to SPIE Photonics West?</summary>
+        <p>The symposium is scheduled adjacent to Photonics West in San Francisco so that attendees can combine both in one trip. See <a href="attend.html#venue">venue and travel</a>.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>VAM Symposium 2027</h4>
+        <p>February 4&ndash;5, 2027<br>University of California, Berkeley<br><a href="mailto:twaddell@berkeley.edu">twaddell@berkeley.edu</a></p>
+      </div>
+      <div>
+        <h4>Program</h4>
+        <ul>
+          <li><a href="program.html#glance">At a glance</a></li>
+          <li><a href="program.html#day1">Day 1: Symposium</a></li>
+          <li><a href="program.html#day2">Day 2: Build workshop</a></li>
+          <li><a href="program.html#speakers">Speakers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Attend</h4>
+        <ul>
+          <li><a href="attend.html#register">Pre-register</a></li>
+          <li><a href="attend.html#dates">Important dates</a></li>
+          <li><a href="attend.html#posters">Call for posters</a></li>
+          <li><a href="attend.html#workshop">Build workshop application</a></li>
+          <li><a href="attend.html#venue">Venue &amp; travel</a></li>
+          <li><a href="attend.html#sponsor">Sponsorship</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Archive</h4>
+        <ul>
+          <li><a href="archive.html">2025: VAM in Action</a></li>
+          <li><a href="assets/docs/vam-symposium-2025-schedule.pdf">2025 schedule (PDF)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 VAM Symposium. Organized by UC Berkeley Mechanical Engineering and Lawrence Livermore National Laboratory.</span>
+      <span><a href="mailto:twaddell@berkeley.edu">Contact</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
