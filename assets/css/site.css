@@ -383,3 +383,9 @@ li::marker { color: var(--gold-2); }
 .form__status { margin: .9rem 0 0; font-size: .88rem; color: var(--muted); min-height: 1.2em; font-weight: 500; }
 .form__status--ok { color: #147A4B; }
 .form__status--err { color: #B3261E; }
+
+/* ------------------------------------------------------------- photos --- */
+.photo-wide, .photo-card { margin: 0 0 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); box-shadow: var(--shadow-sm); }
+.photo-wide img { width: 100%; aspect-ratio: 2.4 / 1; object-fit: cover; }
+.photo-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.photo-wide figcaption, .photo-card figcaption { padding: .5rem .85rem; font-size: .76rem; color: var(--faint); }
