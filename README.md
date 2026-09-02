@@ -77,6 +77,15 @@ These were inferred from the planning documents and need a real decision:
   site. Add people only once they have accepted.
 - **Workshop cost.** Described as "seeking funding to subsidise ~10 kits at ~$1,500 each".
   Replace with real pricing once funding is settled.
+- **Code of conduct.** `attend.html#conduct` is a standard short code with reporting to the
+  contact address. Confirm the reporting contact (a second, non-organizer contact is good
+  practice) and check it against campus event policy.
+- **Student travel support** is described as "being sought" with priority for poster
+  presenters. Change to firm terms or remove once funding is known.
+- **Invitation letters, confirmation letters, no hotel block** are stated as offered on
+  request. Make sure someone actually owns those requests.
+- **Photography notice** says sessions may be photographed and recorded with speaker
+  permission. Adjust if Berkeley requires a specific consent form.
 - **Speakers.** Every 2027 speaker slot currently shows Hayden Taylor, with his headshot from
   me.berkeley.edu (`assets/img/speakers/hayden-taylor.jpg`), and the page says so in a
   red notice. To add a real speaker: drop a square headshot into `assets/img/speakers/`,
