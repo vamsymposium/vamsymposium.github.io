@@ -22,14 +22,24 @@ python -m http.server 8000
 
 Then open <http://localhost:8000>. Any static server works; there is nothing to compile.
 
-## Deploying to GitHub Pages
+## Deployment
 
-1. Push this folder to a repository (its own repo, or a `docs/` folder in an existing one).
-2. Settings → Pages → deploy from branch → `main` / root (or `/docs`).
-3. `.nojekyll` is already present so `assets/` is served verbatim.
+**Live:** <https://twaddellberkeley.github.io/vam-symposium/>
+**Repo:** <https://github.com/twaddellberkeley/vam-symposium> (owner `twaddellberkeley`,
+twaddell@berkeley.edu). GitHub Pages serves `main` from the repo root; `.nojekyll` keeps
+`assets/` verbatim. Every push to `main` redeploys in about a minute.
 
-For a `vamsymposium.org`-style domain, add a `CNAME` file containing the bare domain
-and point a DNS `CNAME` record at `<user>.github.io`.
+```bash
+git add -A && git commit -m "Update program" && git push
+```
+
+This folder is its own git repo (nested inside the `claude` workspace, which ignores it).
+Its `credential.helper` is pinned to the `twaddellberkeley` gh login so pushes route to the
+right account even though `taylorDrover` is the machine's active gh account.
+
+For a custom domain (e.g. `vamsymposium.org`): add a `CNAME` file containing the bare domain,
+point a DNS `CNAME` record at `twaddellberkeley.github.io`, then enable "Enforce HTTPS" in
+Settings → Pages. A `berkeley.edu` subdomain would instead go through campus IT.
 
 ## Wiring up the interest form
 
