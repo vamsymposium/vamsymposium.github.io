@@ -91,28 +91,35 @@ These were inferred from the planning documents and need a real decision:
 
 ## Design
 
-Warm cream paper, full-bleed flat colour bands, chunky type and hard offset shadows —
-in the spirit of the FAB conference sites rather than a corporate university template.
+White ground, institutional navy (`#0B2A4A`) with a restrained gold accent (`#F2B632`),
+Inter for all type, thin rules and soft shadows. The home page opens on a full-bleed
+photograph of an OpenCAL printer with a navy gradient overlay, then follows the standard
+conference-site order: organizers, important dates, about, gallery, topics, program at a
+glance, speakers, venue, committee, sponsors.
 
 | Token | Value | Used for |
 |---|---|---|
-| `--ink` | `#16243F` | Text, dark bands, every border |
-| `--cream` / `--cream-2` | `#FBF3E4` / `#F4E9D3` | Page ground, alternating sections |
-| `--coral` | `#E8493B` | Primary buttons, eyebrows, schedule times |
-| `--amber` | `#F5B437` | Highlights, notices, nav hover |
-| `--cyan` | `#17BDD4` | Projected light — callouts, the hero vial |
-| `--dusty` / `--plum` | `#A9C4D4` / `#7C5CBF` | Fourth and fifth accents |
+| `--navy` / `--navy-3` | `#0B2A4A` / `#1F4E82` | Headings, dark bands, links |
+| `--gold` / `--gold-2` | `#F2B632` / `#C98F0F` | Primary button, section rules, eyebrows |
+| `--teal` | `#1B8FA8` | Secondary accent (moderators, topic 2) |
+| `--bg-alt` | `#F4F6F9` | Alternating sections |
 
-Type is **Archivo Black** for banner words, **Poppins** for everything else, and
-**Space Mono** for letterspaced uppercase labels.
+Light only; every colour is painted explicitly.
 
-There is deliberately **no dark mode** — the cream ground is the identity, and a dark
-variant would fight it. Every colour is painted explicitly rather than inherited.
+## Photography and credits
 
-The hero canvas draws a rotating sinogram: parallel light sheets sweeping a vial from
-every angle, which is literally how a VAM printer works. It pauses when scrolled
-off-screen or the tab is hidden, and holds a single static frame under
-`prefers-reduced-motion`.
+`assets/img/photos/` — sources and licences (also captioned on the page):
+
+| File | Source | Licence |
+|---|---|---|
+| `hero-opencal.jpg`, `workshop-vial.jpg`, `gallery-opencal-part.jpg` | OpenCAL project documentation, UC Berkeley (github.com/computed-axial-lithography/OpenCAL-documentation) | Project photos |
+| `gallery-raft-thinker.jpg` | Krumins et al., *Nat. Commun.* 2026, Fig. 4 (crop) | CC BY 4.0 |
+| `gallery-holovam-benchy.jpg` | Álvarez-Castaño et al., *Nat. Commun.* 2025, Fig. 6 (crop) | CC BY 4.0 |
+| `gallery-emvp-lattice.jpg` | Tisato et al., *Nat. Commun.* 2025, Fig. 2 (crop) | CC BY 4.0 |
+| `speakers/hayden-taylor.jpg` | me.berkeley.edu faculty page | Berkeley ME |
+
+Replace the OpenCAL shots with your own lab photography when you have it — a photo of
+the room full of people from 2025 would be the ideal hero.
 
 ## Editing
 
