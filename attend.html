@@ -83,9 +83,16 @@
             <input id="f-email" name="email" type="email" autocomplete="email" required>
           </div>
           <div class="field">
-            <label for="f-affil">Affiliation</label>
-            <input id="f-affil" name="affiliation" type="text" autocomplete="organization">
+            <label for="f-affil">Affiliation <span aria-hidden="true">*</span> <span class="hint">Institution, laboratory, or company.</span></label>
+            <input id="f-affil" name="affiliation" type="text" autocomplete="organization" required>
           </div>
+          <fieldset class="field">
+            <legend>Sector <span aria-hidden="true">*</span></legend>
+            <label class="check"><input type="radio" name="sector" value="Academia" required> Academia</label>
+            <label class="check"><input type="radio" name="sector" value="Industry"> Industry</label>
+            <label class="check"><input type="radio" name="sector" value="National laboratory / government"> National laboratory or government</label>
+            <label class="check"><input type="radio" name="sector" value="Other"> Other</label>
+          </fieldset>
           <fieldset class="field">
             <legend>I am interested in</legend>
             <label class="check"><input type="checkbox" name="interest" value="Day 1 symposium (in person)" checked> Day 1 symposium, in person</label>

@@ -21,6 +21,7 @@
       name: (data.get("name") || "").trim(),
       email: (data.get("email") || "").trim(),
       affiliation: (data.get("affiliation") || "").trim(),
+      sector: (data.get("sector") || "").trim(),
       interest: interests.join("; "),
       notes: (data.get("notes") || "").trim()
     };
@@ -31,6 +32,7 @@
       "Name: " + v.name,
       "Email: " + v.email,
       "Affiliation: " + (v.affiliation || "-"),
+      "Sector: " + (v.sector || "-"),
       "Interested in: " + (v.interest || "-"),
       "",
       "Notes:",
@@ -48,8 +50,8 @@
     e.preventDefault();
 
     var v = collect();
-    if (!v.name || !v.email || v.email.indexOf("@") < 1) {
-      say("Please give us a name and a valid email address.", "err");
+    if (!v.name || !v.email || v.email.indexOf("@") < 1 || !v.affiliation || !v.sector) {
+      say("Please give us your name, a valid email address, your affiliation, and a sector.", "err");
       return;
     }
 
