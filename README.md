@@ -58,15 +58,17 @@ enable "Enforce HTTPS" in Settings → Pages. A `berkeley.edu` subdomain would g
 
 ## Registration and poster forms
 
-Both forms are Google Forms owned by **twaddell@berkeley.edu**, linked from `attend.html`:
+All three forms are Google Forms owned by **twaddell@berkeley.edu**, linked from `attend.html`:
 
 | Form | Responder link | Edit in Google Forms |
 |---|---|---|
 | Pre-registration | https://docs.google.com/forms/d/e/1FAIpQLSdphQWlfyHK8mSvoroDWIIAPFe4vAFPM2Nku5CkmW-atlaVXA/viewform | https://docs.google.com/forms/d/1AryjLL9UpmjBoH4g7jthHODuPE_P6ud9vcS_Tb4wCyg/edit |
 | Poster abstracts | https://docs.google.com/forms/d/e/1FAIpQLSdgiftfuF7rBsifFFirlx-5glfGygvzDd56k4T7Sw8a80Ndgg/viewform | https://docs.google.com/forms/d/1SXJAd21tYuf1LOO4_Kd2VvRWTJSZisfmztKQvHW-fJg/edit |
+| Build workshop applications | https://docs.google.com/forms/d/e/1FAIpQLSfJH9TW6Ykj2kRQXmYodmYkzTBW5LFRcv1CZpiKj_GOWprLxg/viewform | https://docs.google.com/forms/d/16HjEOJHrXBa0kBcFS6QWZJjU-p63jLkGT4r_MvIbYtw/edit |
 
+Pre-registration and posters are embedded on their pages; the workshop application opens from `program.html#apply`.
 Responses collect in each form's **Responses** tab; use "Link to Sheets" there for a spreadsheet,
-and share the form with co-organizers as editors. Both accept responses from anyone with the link
+and share the form with co-organizers as editors. All accept responses from anyone with the link
 (no Google sign-in). To close a form, turn off "Accepting responses" rather than deleting it.
 `assets/js/form.js` is the retired on-site form handler and is no longer loaded.
 
@@ -157,3 +159,13 @@ python _private/build_pages.py && python _private/speakers.py && python _private
 ```
 Copy is American English throughout; times are written `9:00 AM` and dates `February 4, 2027`.
 Design tokens (colours, type, spacing) all live at the top of `assets/css/site.css`.
+
+## Link previews and analytics
+
+- **Link previews:** every page carries Open Graph and Twitter card tags with a canonical URL on
+  `vamsymposium.github.io`; the preview image is `assets/img/og-card.jpg` (1200x630). Regenerate it if
+  the dates change.
+- **Visitor counts:** GoatCounter (no cookies, no personal data). The script tag is on every page and
+  reports to `vamsymposium.goatcounter.com`; the dashboard is at that address once the account exists.
+- **Accessibility:** checked with axe-core (WCAG 2.1 AA) on all pages at desktop and phone widths, zero
+  violations as of 2026-09-30. Keep `--gold-2` and `--faint` at their current darker values for contrast.

@@ -11,7 +11,7 @@
   --navy-2:     #163D68;
   --navy-3:     #1F4E82;
   --gold:       #F2B632;
-  --gold-2:     #C98F0F;
+  --gold-2:     #8C6100;
   --teal:       #1B8FA8;
 
   --bg:         #FFFFFF;
@@ -23,7 +23,7 @@
 
   --text:       #182233;
   --muted:      #55657A;
-  --faint:      #7A889A;
+  --faint:      #5C6A7E;
 
   --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -342,7 +342,7 @@ li::marker { color: var(--gold-2); }
 
 .site-footer { background: var(--navy); color: #E6EDF5; padding-block: clamp(2.75rem, 5.5vw, 4rem) 1.75rem; }
 .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 2rem; }
-.site-footer h4 { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin: 0 0 .85rem; font-weight: 700; }
+.site-footer .footer-h { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin: 0 0 .85rem; font-weight: 700; }
 .site-footer ul { list-style: none; margin: 0; padding: 0; }
 .site-footer li { margin-bottom: .45rem; }
 .site-footer a { color: #D2DDEA; text-decoration: none; font-size: .93rem; }
@@ -412,3 +412,16 @@ li::marker { color: var(--gold-2); }
 .tag--link { text-decoration: none; color: var(--navy-3); font-size: .8rem; padding: .3rem .7rem; }
 .tag--link:hover { background: #fff; border-color: var(--gold); color: var(--navy); }
 @media (max-width: 560px) { .hide-sm { display: none; } }
+
+/* ------------------------------------------- collapsible reading list --- */
+.reading { align-items: start; }
+details.reading__group { padding: 0; }
+details.reading__group > summary { list-style: none; cursor: pointer; padding: 1rem 1.3rem; }
+details.reading__group > summary::-webkit-details-marker { display: none; }
+details.reading__group > summary h3 { margin: 0; padding: 0 1.6rem 0 0; border: 0; position: relative; }
+details.reading__group > summary h3::after { content: ""; position: absolute; right: .2rem; top: .35rem; width: .5rem; height: .5rem; border-right: 2px solid var(--navy); border-bottom: 2px solid var(--navy); transform: rotate(45deg); transition: transform .15s ease; }
+details.reading__group[open] > summary h3::after { transform: rotate(-135deg); top: .6rem; }
+details.reading__group[open] > summary { border-bottom: 2px solid var(--gold); }
+details.reading__group > summary:hover h3 { color: var(--navy-3); }
+details.reading__group .reading__list { padding: .3rem 1.3rem 1rem; }
+.reading__count { display: block; font-size: .76rem; font-weight: 500; color: var(--muted); margin-top: .25rem; margin-left: 0; }
