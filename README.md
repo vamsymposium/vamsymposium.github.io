@@ -62,8 +62,8 @@ These were inferred from the planning documents and need a real decision:
 
 - **Dates.** Thursday 4 – Friday 5 February 2027 throughout, from the `VAM27@Berkeley`
   brainstorm. Confirm against the final SPIE Photonics West 2027 dates.
-- **Venue.** Listed as "on the UC Berkeley campus, room to be confirmed". The candidate
-  rooms in the brainstorm are deliberately not published.
+- **Venue.** Day 1: The Gateway, Room 5340. Day 2: CITRIS Invention Lab, Sutardja Dai Hall.
+  Confirm the Gateway street address and accessibility wording once the room booking is final.
 - **Contact address.** Currently `twaddell@berkeley.edu` in the footer and mailto links.
   A group alias would age better — one find-and-replace across the four HTML files.
 - **Organizing committee.** The home page lists Hayden Taylor, X Sun and Taylor Waddell
@@ -71,8 +71,7 @@ These were inferred from the planning documents and need a real decision:
   Titles are minimal — add roles, and remove or add people as the 2027 committee firms up.
 - **Important dates.** Everything except Feb 4–5 is provisional and labelled as such on the
   site. Replace with real deadlines when registration opens.
-- **Accessibility statement.** The venue card says "wheelchair accessible" — confirm once the
-  room is chosen.
+- **Accessibility statement.** The venue card says "wheelchair accessible" — confirm for both rooms.
 - **Speaker names.** No prospective speaker from the internal brainstorm appears on the
   site. Add people only once they have accepted.
 - **Workshop cost.** Described as "seeking funding to subsidise ~10 kits at ~$1,500 each".
@@ -86,11 +85,10 @@ These were inferred from the planning documents and need a real decision:
   request. Make sure someone actually owns those requests.
 - **Photography notice** says sessions may be photographed and recorded with speaker
   permission. Adjust if Berkeley requires a specific consent form.
-- **Speakers.** Every 2027 speaker slot currently shows Hayden Taylor, with his headshot from
-  me.berkeley.edu (`assets/img/speakers/hayden-taylor.jpg`), and the page says so in a
-  red notice. To add a real speaker: drop a square headshot into `assets/img/speakers/`,
-  add an entry to `SLOTS`/`PEOPLE` in `_private/speakers.py`, and rerun the two generators
-  (below). Remove the "Placeholder lineup" notice once the lineup is real.
+- **Speakers.** No 2027 speakers are shown; both speaker sections say the agenda and lineup
+  are still being worked out. The placeholder cards (Hayden Taylor in every slot) are kept in
+  `_private/speakers.py` behind `INJECT_SPEAKERS = False`; flip it and fill `PEOPLE` once real
+  speakers accept. His headshot stays at `assets/img/speakers/hayden-taylor.jpg` for that.
 - **Topic areas and reading list.** `program.html#topics` defines eight topic areas
   distilled from ~45 papers (2024–2026); `#reading` lists them by topic with a 2026 badge,
   and the same eight topics are the poster categories on the Attend page. All of this is
