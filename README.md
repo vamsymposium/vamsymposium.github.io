@@ -4,15 +4,22 @@ Static site for the Volumetric Additive Manufacturing Symposium at UC Berkeley.
 No build step, no dependencies — plain HTML, one stylesheet, two small scripts.
 
 ```
-index.html      Home — hero, organizers strip, important dates, about, themes, program at a
-                glance, speakers, venue, organizing committee, sponsors
-program.html    Program overview table, Day 1 build workshop (Thu), Day 2 symposium (Fri), speakers, FAQ
-attend.html     Pre-registration + fee table, important dates, call for posters, workshop
-                application, venue & travel (incl. accessibility), suggestions, sponsorship, contact
-archive.html    Past symposia — full 2025 program and speaker lineup
-assets/         css, js, favicon, and the 2025 schedule PDF
-_private/       Internal planning notes. Git-ignored — do not publish.
+index.html      Home: hero, key dates (the only place they live), about + 2025 photo, research
+                gallery, the two days in brief, organizers, sponsors
+program.html    Overview table, Thursday build workshop (incl. how to apply), Friday
+                symposium schedule, topic areas, reading list, FAQ
+speakers.html   2027 speakers (coming soon), suggest a speaker or session
+posters.html    Call for posters with the embedded Google Form
+venue.html      Venue, travel, virtual attendance, visas, hotels, meals, photography
+register.html   Pre-registration (embedded Google Form), fees, students, code of conduct
+archive.html    Past symposia: the 2025 program, speakers, and photos
+attend.html     Redirect only: old links (and emails already sent) forward to the new pages
+assets/         css, js, images, and the 2025 schedule PDF
+_private/       Internal planning notes and generators. Git-ignored; do not publish.
 ```
+
+Each nav item is its own page, and each piece of information lives in one place;
+other pages link to it rather than repeating it.
 
 ## Running it locally
 
@@ -138,7 +145,7 @@ If you would rather regenerate than hand-edit, the scripts that produced the pag
 Run them in that order from the site root:
 
 ```bash
-python _private/build_pages.py && python _private/speakers.py
+python _private/build_pages.py && python _private/speakers.py && python _private/audit.py
 ```
 Copy is American English throughout; times are written `9:00 AM` and dates `February 4, 2027`.
 Design tokens (colours, type, spacing) all live at the top of `assets/css/site.css`.

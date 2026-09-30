@@ -31,11 +31,11 @@
     <button class="nav__toggle" type="button" aria-controls="nav-links" aria-expanded="false">Menu</button>
     <ul class="nav__links" id="nav-links">
       <li><a href="program.html" aria-current="page">Program</a></li>
-      <li><a href="program.html#speakers">Speakers</a></li>
-      <li><a href="attend.html">Attend</a></li>
-      <li><a href="attend.html#venue">Venue</a></li>
+      <li><a href="speakers.html">Speakers</a></li>
+      <li><a href="posters.html">Posters</a></li>
+      <li><a href="venue.html">Venue</a></li>
       <li><a href="archive.html">Past Symposia</a></li>
-      <li><a class="btn btn--primary btn--sm" href="attend.html#register">Pre-register</a></li>
+      <li><a class="btn btn--primary btn--sm" href="register.html">Pre-register</a></li>
     </ul>
   </div>
 </header>
@@ -103,7 +103,7 @@
       </div>
       <div class="card card--muted">
         <h3>Safety</h3>
-        <p>The workshop uses photopolymer resins, isopropanol, and high-intensity visible-light projectors. Facilitators brief each team before assembly; see the <a href="attend.html#conduct">code of conduct</a> for laboratory safety expectations.</p>
+        <p>The workshop uses photopolymer resins, isopropanol, and high-intensity visible-light projectors. Facilitators brief each team before assembly; see the <a href="register.html#conduct">code of conduct</a> for laboratory safety expectations.</p>
       </div>
       <div class="card card--muted">
         <h3>After the workshop</h3>
@@ -126,85 +126,33 @@
       </div>
 
     </div>
-    <div class="btn-row mt-2">
-      <a class="btn btn--primary" href="attend.html#workshop">How to apply</a>
+    <div id="apply">
+      <h3 class="mt-2">How to apply</h3>
+      <div class="grid grid--2">
+        <div class="card">
+          <p class="card__num">Application</p>
+          <h3>What to submit</h3>
+          <p>A brief statement of one to three paragraphs describing the team, intended applications, and how the printer will be used after the workshop.</p>
+        </div>
+        <div class="card">
+          <p class="card__num">Timeline</p>
+          <h3>Key dates</h3>
+          <p>Applications open with registration in fall 2026 and close in December. Teams are notified in early January 2027.</p>
+        </div>
+      </div>
+      <div class="notice mt-2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.01"/></svg>
+        <div>Select <em>Thursday OpenCAL build workshop</em> on the <a href="register.html">pre-registration form</a> to receive the application when it opens.</div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="topics">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Topic areas</p>
-      <h2>Where the field is moving</h2>
-      <p class="lede">Eight topic areas distilled from roughly forty-five papers published between 2024 and 2026. They organize the panels, the poster session, and the reading list below. Posters may be submitted under any topic.</p>
-    </div>
-    <div class="grid grid--2">
-      <a class="card card--c2 card--link" href="#reading-light">
-        <p class="card__num">Topic 01</p>
-        <h3>Light engines and holography</h3>
-        <p>Phase-modulated and holographic projection is replacing amplitude-only DMD patterning: higher photon efficiency, diffraction-limited features, and new geometries such as lensless and single-view systems.</p>
-        <div class="tag-list"><span class="tag">Phase light modulators</span><span class="tag">Holographic VAM</span><span class="tag">Single-exposure</span><span class="tag">Lensless</span></div>
-        <span class="card__more">7 papers, 6 from 2026 &rarr;</span>
-      </a>
-      <a class="card card--c4 card--link" href="#reading-compute">
-        <p class="card__num">Topic 02</p>
-        <h3>Projection computation and inverse design</h3>
-        <p>Pattern generation has become a differentiable inverse problem: physically based ray tracing and wave optics that account for scattering, occlusions, refraction, and chemical blur.</p>
-        <div class="tag-list"><span class="tag">Differentiable rendering</span><span class="tag">Wave optics</span><span class="tag">Overprinting</span><span class="tag">Open frameworks</span></div>
-        <span class="card__more">7 papers, 4 from 2026 &rarr;</span>
-      </a>
-      <a class="card card--c1 card--link" href="#reading-chem">
-        <p class="card__num">Topic 03</p>
-        <h3>Photochemistry and resin design</h3>
-        <p>Oxygen inhibition, exotherm, viscosity, and dose window are the practical limits on fidelity and size. New chemistries widen the window: inhibition control, RAFT, thiol-ene, and self-assembling macromers.</p>
-        <div class="tag-list"><span class="tag">Oxygen inhibition</span><span class="tag">RAFT</span><span class="tag">Low viscosity</span><span class="tag">Dual-color</span></div>
-        <span class="card__more">8 papers, 6 from 2026 &rarr;</span>
-      </a>
-      <a class="card card--c3 card--link" href="#reading-control">
-        <p class="card__num">Topic 04</p>
-        <h3>Process monitoring, metrology, and control</h3>
-        <p>Closing the loop: in-situ imaging to end exposure automatically, map substrates for overprinting, and characterize parts while they print, so results stop depending on the operator.</p>
-        <div class="tag-list"><span class="tag">Auto-exposure</span><span class="tag">In-situ metrology</span><span class="tag">Closed loop</span><span class="tag">Repeatability</span></div>
-        <span class="card__more">7 papers, 6 from 2026 &rarr;</span>
-      </a>
-      <a class="card card--c2 card--link" href="#reading-scale">
-        <p class="card__num">Topic 05</p>
-        <h3>Scale, throughput, and production</h3>
-        <p>From one part per vial to manufacturing: thermal management for large volumes, droplet-based serial printing, roll-to-roll, hybrid multiscale platforms, and the operations research behind them.</p>
-        <div class="tag-list"><span class="tag">Large volume</span><span class="tag">Serial production</span><span class="tag">Roll-to-roll</span><span class="tag">Multiscale</span></div>
-        <span class="card__more">6 papers, 4 from 2026 &rarr;</span>
-      </a>
-      <a class="card card--c1 card--link" href="#reading-materials">
-        <p class="card__num">Topic 06</p>
-        <h3>Materials beyond acrylates</h3>
-        <p>Glass, silicones, fluoropolymers, foams, and composites: routes that keep the resin transparent during printing and add function afterward, plus optics-grade surfaces.</p>
-        <div class="tag-list"><span class="tag">Glass</span><span class="tag">Silicone</span><span class="tag">Micro-optics</span><span class="tag">Recyclable</span><span class="tag">Composites</span></div>
-        <span class="card__more">8 papers, 4 from 2026 &rarr;</span>
-      </a>
-      <a class="card card--c3 card--link" href="#reading-bio">
-        <p class="card__num">Topic 07</p>
-        <h3>Biofabrication</h3>
-        <p>Cell-laden printing at tissue-relevant densities: scattering-aware patterning, refractive-index matching, printing directly inside microfluidic chips, and light-controlled biology after the print.</p>
-        <div class="tag-list"><span class="tag">Volumetric bioprinting</span><span class="tag">Xolography</span><span class="tag">Organ-on-chip</span><span class="tag">High cell density</span></div>
-        <span class="card__more">8 papers, 5 from 2026 &rarr;</span>
-      </a>
-      <a class="card card--c4 card--link" href="#reading-open">
-        <p class="card__num">Topic 08</p>
-        <h3>Open hardware, reproducibility, and education</h3>
-        <p>Making the technology buildable outside the founding labs: open printers and post-processors, open computation frameworks, shared calibration methods, and the community that maintains them.</p>
-        <div class="tag-list"><span class="tag">OpenCAL</span><span class="tag">Open frameworks</span><span class="tag">Calibration</span><span class="tag">Community</span></div>
-        <span class="card__more">5 papers, 2 from 2026 &rarr;</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section section--alt" id="day2">
+<section class="section" id="day2">
   <div class="wrap">
     <div class="notice" style="margin-bottom:clamp(2rem,4vw,3rem)">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.01"/></svg>
-      <div><strong>Schedule coming soon.</strong> Session times follow the 2025 program. Speakers and session topics will be announced soon; <a href="attend.html#register">pre-register</a> to be notified when the program is published.</div>
+      <div><strong>Schedule coming soon.</strong> Session times follow the 2025 program. Speakers and session topics will be announced soon; <a href="register.html">pre-register</a> to be notified when the program is published.</div>
     </div>
 
     <div class="daybar">
@@ -313,42 +261,76 @@
   </div>
 </section>
 
-<section class="section" id="speakers">
+
+<section class="section section--alt" id="topics">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Speakers</p>
-      <h2>Plenary speakers and panelists</h2>
-      <p class="lede">The 2027 agenda and speaker lineup are still being worked out and will be announced soon. In addition to researchers in volumetric printing, the organizers are inviting experts from open-source hardware, photonics, display engineering, and semiconductor lithography to address this year's themes.</p>
+      <p class="eyebrow">Topic areas</p>
+      <h2>Where the field is moving</h2>
+      <p class="lede">Eight topic areas distilled from roughly forty-five papers published between 2024 and 2026. They organize the panels, the poster session, and the reading list below. Posters may be submitted under any topic.</p>
     </div>
-
     <div class="grid grid--2">
-      <div class="card">
-        <p class="card__num">Plenary talk I</p>
-        <h3>Coming soon</h3>
-        <p>Friday, February 5, 9:30 AM</p>
-      </div>
-      <div class="card">
-        <p class="card__num">Plenary talk II</p>
-        <h3>Coming soon</h3>
-        <p>Friday, February 5, 2:15 PM</p>
-      </div>
-      <div class="card card--c1">
-        <p class="card__num">Nominations</p>
-        <h3>Suggest a speaker</h3>
-        <p>Nominations, including self-nominations, are welcome, particularly from disciplines adjacent to volumetric printing.</p>
-        <span class="card__more"><a href="attend.html#propose">Submit a suggestion &rarr;</a></span>
-      </div>
-      <div class="card card--c2">
-        <p class="card__num">Archive</p>
-        <h3>2025 speakers</h3>
-        <p>The 2025 program featured plenary talks from Formlabs and the University of Freiburg and panelists from Align, Stanford, LLNL, XOLO3D, Cornell, Caltech, Vitro3D, and UMC Utrecht.</p>
-        <span class="card__more"><a href="archive.html#speakers-2025">View the 2025 lineup &rarr;</a></span>
-      </div>
+      <a class="card card--c2 card--link" href="#reading-light">
+        <p class="card__num">Topic 01</p>
+        <h3>Light engines and holography</h3>
+        <p>Phase-modulated and holographic projection is replacing amplitude-only DMD patterning: higher photon efficiency, diffraction-limited features, and new geometries such as lensless and single-view systems.</p>
+        <div class="tag-list"><span class="tag">Phase light modulators</span><span class="tag">Holographic VAM</span><span class="tag">Single-exposure</span><span class="tag">Lensless</span></div>
+        <span class="card__more">7 papers, 6 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c4 card--link" href="#reading-compute">
+        <p class="card__num">Topic 02</p>
+        <h3>Projection computation and inverse design</h3>
+        <p>Pattern generation has become a differentiable inverse problem: physically based ray tracing and wave optics that account for scattering, occlusions, refraction, and chemical blur.</p>
+        <div class="tag-list"><span class="tag">Differentiable rendering</span><span class="tag">Wave optics</span><span class="tag">Overprinting</span><span class="tag">Open frameworks</span></div>
+        <span class="card__more">7 papers, 4 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c1 card--link" href="#reading-chem">
+        <p class="card__num">Topic 03</p>
+        <h3>Photochemistry and resin design</h3>
+        <p>Oxygen inhibition, exotherm, viscosity, and dose window are the practical limits on fidelity and size. New chemistries widen the window: inhibition control, RAFT, thiol-ene, and self-assembling macromers.</p>
+        <div class="tag-list"><span class="tag">Oxygen inhibition</span><span class="tag">RAFT</span><span class="tag">Low viscosity</span><span class="tag">Dual-color</span></div>
+        <span class="card__more">8 papers, 6 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c3 card--link" href="#reading-control">
+        <p class="card__num">Topic 04</p>
+        <h3>Process monitoring, metrology, and control</h3>
+        <p>Closing the loop: in-situ imaging to end exposure automatically, map substrates for overprinting, and characterize parts while they print, so results stop depending on the operator.</p>
+        <div class="tag-list"><span class="tag">Auto-exposure</span><span class="tag">In-situ metrology</span><span class="tag">Closed loop</span><span class="tag">Repeatability</span></div>
+        <span class="card__more">7 papers, 6 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c2 card--link" href="#reading-scale">
+        <p class="card__num">Topic 05</p>
+        <h3>Scale, throughput, and production</h3>
+        <p>From one part per vial to manufacturing: thermal management for large volumes, droplet-based serial printing, roll-to-roll, hybrid multiscale platforms, and the operations research behind them.</p>
+        <div class="tag-list"><span class="tag">Large volume</span><span class="tag">Serial production</span><span class="tag">Roll-to-roll</span><span class="tag">Multiscale</span></div>
+        <span class="card__more">6 papers, 4 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c1 card--link" href="#reading-materials">
+        <p class="card__num">Topic 06</p>
+        <h3>Materials beyond acrylates</h3>
+        <p>Glass, silicones, fluoropolymers, foams, and composites: routes that keep the resin transparent during printing and add function afterward, plus optics-grade surfaces.</p>
+        <div class="tag-list"><span class="tag">Glass</span><span class="tag">Silicone</span><span class="tag">Micro-optics</span><span class="tag">Recyclable</span><span class="tag">Composites</span></div>
+        <span class="card__more">8 papers, 4 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c3 card--link" href="#reading-bio">
+        <p class="card__num">Topic 07</p>
+        <h3>Biofabrication</h3>
+        <p>Cell-laden printing at tissue-relevant densities: scattering-aware patterning, refractive-index matching, printing directly inside microfluidic chips, and light-controlled biology after the print.</p>
+        <div class="tag-list"><span class="tag">Volumetric bioprinting</span><span class="tag">Xolography</span><span class="tag">Organ-on-chip</span><span class="tag">High cell density</span></div>
+        <span class="card__more">8 papers, 5 from 2026 &rarr;</span>
+      </a>
+      <a class="card card--c4 card--link" href="#reading-open">
+        <p class="card__num">Topic 08</p>
+        <h3>Open hardware, reproducibility, and education</h3>
+        <p>Making the technology buildable outside the founding labs: open printers and post-processors, open computation frameworks, shared calibration methods, and the community that maintains them.</p>
+        <div class="tag-list"><span class="tag">OpenCAL</span><span class="tag">Open frameworks</span><span class="tag">Calibration</span><span class="tag">Community</span></div>
+        <span class="card__more">5 papers, 2 from 2026 &rarr;</span>
+      </a>
     </div>
   </div>
 </section>
 
-<section class="section section--alt" id="reading">
+<section class="section" id="reading">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Background reading</p>
@@ -456,7 +438,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section section--alt">
   <div class="wrap wrap--narrow">
     <h2>Frequently asked questions</h2>
     <div class="faq mt-2">
@@ -470,7 +452,7 @@
       </details>
       <details>
         <summary>Can I present a poster?</summary>
-        <p>Yes. The <a href="attend.html#posters">call for posters</a> is open now, and abstracts are due Friday, January 8, 2027.</p>
+        <p>Yes. The <a href="posters.html">call for posters</a> is open now, and abstracts are due Friday, January 8, 2027.</p>
       </details>
       <details>
         <summary>Do I have to attend both days?</summary>
@@ -478,7 +460,7 @@
       </details>
       <details>
         <summary>How does the symposium relate to SPIE Photonics West?</summary>
-        <p>The symposium is scheduled adjacent to Photonics West in San Francisco so that attendees can combine both in one trip. See <a href="attend.html#venue">venue and travel</a>.</p>
+        <p>The symposium is scheduled adjacent to Photonics West in San Francisco so that attendees can combine both in one trip. See <a href="venue.html">venue and travel</a>.</p>
       </details>
     </div>
   </div>
@@ -496,23 +478,23 @@
       <div>
         <h4>Program</h4>
         <ul>
-          <li><a href="program.html#glance">At a glance</a></li>
-          <li><a href="program.html#day1">Day 1: Build workshop</a></li>
-          <li><a href="program.html#day2">Day 2: Symposium</a></li>
-          <li><a href="program.html#speakers">Speakers</a></li>
+          <li><a href="program.html#glance">Overview</a></li>
+          <li><a href="program.html#day1">Thursday: Build workshop</a></li>
+          <li><a href="program.html#day2">Friday: Symposium</a></li>
+          <li><a href="program.html#topics">Topic areas</a></li>
+          <li><a href="speakers.html">Speakers</a></li>
         </ul>
       </div>
       <div>
         <h4>Attend</h4>
         <ul>
-          <li><a href="attend.html#register">Pre-register</a></li>
-          <li><a href="attend.html#dates">Important dates</a></li>
-          <li><a href="attend.html#posters">Call for posters</a></li>
-          <li><a href="attend.html#workshop">Build workshop application</a></li>
-          <li><a href="attend.html#venue">Venue &amp; travel</a></li>
-          <li><a href="attend.html#students">Students</a></li>
-          <li><a href="attend.html#sponsor">Sponsorship</a></li>
-          <li><a href="attend.html#conduct">Code of conduct</a></li>
+          <li><a href="register.html">Pre-register</a></li>
+          <li><a href="index.html#dates">Important dates</a></li>
+          <li><a href="posters.html">Call for posters</a></li>
+          <li><a href="venue.html">Venue &amp; travel</a></li>
+          <li><a href="register.html#students">Students</a></li>
+          <li><a href="register.html#conduct">Code of conduct</a></li>
+          <li><a href="index.html#sponsors">Sponsorship</a></li>
         </ul>
       </div>
       <div>
@@ -525,7 +507,7 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 VAM Symposium. Organized by UC Berkeley Mechanical Engineering in collaboration with Lawrence Livermore National Laboratory.</span>
-      <span><a href="mailto:twaddell@berkeley.edu">Contact</a> &middot; <a href="attend.html#conduct">Code of conduct</a> &middot; <a href="https://security.berkeley.edu/policy/privacy-statement-uc-berkeley-websites" rel="noopener">Privacy</a></span>
+      <span><a href="mailto:twaddell@berkeley.edu">Contact</a> &middot; <a href="register.html#conduct">Code of conduct</a> &middot; <a href="https://security.berkeley.edu/policy/privacy-statement-uc-berkeley-websites" rel="noopener">Privacy</a></span>
     </div>
   </div>
 </footer>

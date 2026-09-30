@@ -167,7 +167,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ------------------------------------------------------ important dates -- */
 
-.dates { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+.dates { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
 .date { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--navy); border-radius: var(--radius); padding: 1.1rem 1.2rem; box-shadow: var(--shadow-sm); }
 .date--coral { border-top-color: var(--gold); }
 .date--cyan, .date--dusty, .date--plum { border-top-color: var(--navy-3); }
@@ -356,6 +356,8 @@ li::marker { color: var(--gold-2); }
 .pagehead .eyebrow { color: var(--gold); }
 .pagehead h1 { color: #fff; margin-bottom: .3em; }
 .pagehead .lede { color: #C5D3E3; }
+.pagehead a { color: var(--gold); }
+.pagehead a:hover { color: #fff; }
 
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .split { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); gap: clamp(1.5rem, 4vw, 3.25rem); align-items: start; }
