@@ -376,8 +376,8 @@ li::marker { color: var(--gold-2); }
 .form .field { margin-bottom: 1.05rem; border: 0; padding: 0; }
 .form label, .form legend { display: block; font-size: .86rem; font-weight: 600; margin-bottom: .4rem; color: var(--text); padding: 0; }
 .form .hint { display: block; font-weight: 400; font-size: .8rem; color: var(--muted); margin-top: .15rem; }
-.form input[type="text"], .form input[type="email"], .form textarea { width: 100%; padding: .62rem .8rem; font: inherit; font-size: .94rem; color: var(--text); background: #fff; border: 1px solid var(--line-2); border-radius: var(--radius-sm); resize: vertical; }
-.form input:focus, .form textarea:focus { outline: 2px solid var(--gold); outline-offset: 0; border-color: var(--gold); }
+.form input[type="text"], .form input[type="email"], .form textarea, .form select { width: 100%; padding: .62rem .8rem; font: inherit; font-size: .94rem; color: var(--text); background: #fff; border: 1px solid var(--line-2); border-radius: var(--radius-sm); resize: vertical; }
+.form input:focus, .form textarea:focus, .form select:focus { outline: 2px solid var(--gold); outline-offset: 0; border-color: var(--gold); }
 .form .check { display: flex; align-items: flex-start; gap: .55rem; font-weight: 400; font-size: .92rem; color: var(--text); margin-bottom: .45rem; cursor: pointer; }
 .form .check input { margin-top: .32rem; accent-color: var(--navy); flex: none; }
 .form__status { margin: .9rem 0 0; font-size: .88rem; color: var(--muted); min-height: 1.2em; font-weight: 500; }

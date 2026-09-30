@@ -56,7 +56,7 @@
       <div>
         <p class="eyebrow">Registration</p>
         <h2>Pre-register for 2027</h2>
-        <p class="lede">Full registration opens in fall 2026. Pre-register now to receive the registration link, the call for posters, the build workshop application, and the final program as they are released.</p>
+        <p class="lede">Full registration opens in fall 2026. Pre-register now to receive the registration link, the build workshop application, and the final program as they are released. The <a href="#posters">call for posters</a> is open now.</p>
         <p>Attendance is free. Registration is required for planning purposes, and places are limited by venue capacity. Pre-registering carries no obligation to attend.</p>
 
         <div class="fees mt-2">
@@ -98,7 +98,7 @@
             <label class="check"><input type="checkbox" name="interest" value="Friday symposium (in person)" checked> Friday symposium, in person</label>
             <label class="check"><input type="checkbox" name="interest" value="Friday symposium (virtual)"> Friday symposium, virtual</label>
             <label class="check"><input type="checkbox" name="interest" value="Thursday OpenCAL build workshop"> Thursday OpenCAL build workshop</label>
-            <label class="check"><input type="checkbox" name="interest" value="Presenting a poster"> Presenting a poster</label>
+            <label class="check"><input type="checkbox" name="interest" value="Presenting a poster"> Presenting a poster <span class="hint">Submit the abstract in the <a href="#posters">call for posters</a>.</span></label>
           </fieldset>
           <div class="field">
             <label for="f-notes">Comments <span class="hint">Topics of interest, speaker suggestions, dietary or accessibility requirements.</span></label>
@@ -120,10 +120,11 @@
       <p class="lede">Dates other than the symposium itself are provisional and will be confirmed when registration opens.</p>
     </div>
     <div class="dates">
-      <div class="date date--dusty"><p class="date__when">Fall 2026</p><p class="date__what">Registration and call for posters open</p></div>
-      <div class="date date--cyan"><p class="date__when">Fall 2026</p><p class="date__what">Build workshop applications open</p></div>
+      <div class="date date--cyan"><p class="date__when">Now open</p><p class="date__what"><a href="#posters">Call for posters</a></p></div>
+      <div class="date date--dusty"><p class="date__when">Fall 2026</p><p class="date__what">Registration and build workshop applications open</p></div>
       <div class="date date--plum"><p class="date__when">December 2026</p><p class="date__what">Build workshop applications close</p></div>
       <div class="date date--dusty"><p class="date__when">Early January 2027</p><p class="date__what">Workshop teams notified</p></div>
+      <div class="date date--dusty"><p class="date__when">January 8, 2027</p><p class="date__what">Poster abstracts due</p></div>
       <div class="date"><p class="date__when">February 4, 2027</p><p class="date__what">OpenCAL build workshop</p></div>
       <div class="date date--coral"><p class="date__when">February 5, 2027</p><p class="date__what">Symposium</p></div>
     </div>
@@ -132,12 +133,14 @@
 
 <section class="section" id="posters">
   <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Call for posters &middot; Now open</p>
+      <h2>Submit a poster abstract</h2>
+      <p class="lede">The poster session is the primary venue for students, postdoctoral researchers, and early-career scientists to present their work. Abstracts are reviewed as they arrive; the deadline is Friday, January 8, 2027.</p>
+    </div>
     <div class="split">
       <div>
-        <p class="eyebrow">Call for posters</p>
-        <h2>Poster session</h2>
-        <p class="lede">The poster session is the primary venue for students, postdoctoral researchers, and early-career scientists to present work at the symposium.</p>
-        <p>Posters are displayed throughout the Friday symposium, with an attended session during the catered lunch. Work in progress, hardware builds, software tools, and materials research are all welcome, as are negative results.</p>
+        <p>Posters are displayed throughout the Friday symposium in The Gateway, with an attended session during the catered lunch. Work in progress, hardware builds, software tools, and materials research are all welcome, as are negative results.</p>
         <h3>Poster topics</h3>
         <p>Submissions are welcome under any of the <a href="program.html#topics">symposium topic areas</a>:</p>
         <ol class="topic-list">
@@ -152,14 +155,91 @@
         </ol>
         <h3>Submission guidelines</h3>
         <ul>
-          <li>Abstract of approximately 250 words, submitted through the registration form when it opens.</li>
-          <li>Portrait orientation, up to 36 &times; 48 inches (A0 also fits).</li>
-          <li>Submission deadline announced with registration in fall 2026.</li>
+          <li>An abstract of up to 250 words, with a title, the presenting author, and any co-authors.</li>
+          <li>Unpublished and in-progress work is welcome. Only the title and author list appear in the program; abstracts are not published.</li>
+          <li>Posters in portrait orientation, up to 36 &times; 48 inches (A0 also fits). Boards and pins are provided.</li>
+          <li>The presenting author attends the Friday symposium in person. Registration is free.</li>
         </ul>
+        <h3>Timeline</h3>
+        <ul>
+          <li><b>Now:</b> submissions open and are reviewed on a rolling basis.</li>
+          <li><b>Friday, January 8, 2027:</b> abstract deadline.</li>
+          <li><b>Friday, January 15, 2027:</b> all decisions sent.</li>
+        </ul>
+        <div class="callout mt-2">
+          <h3>Live demonstrations</h3>
+          <p>Bench space and power can usually be provided next to the poster boards for hardware demonstrations. Tick the demonstration box on the form if you plan to bring equipment.</p>
+        </div>
       </div>
-      <div class="card card--muted">
-        <h3>Live demonstrations</h3>
-        <p>Bench space and power can usually be provided next to the poster boards for hardware demonstrations. Indicate in the pre-registration form if you plan to bring equipment.</p>
+      <div class="card">
+        <h3>Abstract submission</h3>
+        <form class="form" id="poster-form" novalidate>
+          <div class="field">
+            <label for="p-name">Presenting author <span aria-hidden="true">*</span></label>
+            <input id="p-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="p-email">Email <span aria-hidden="true">*</span></label>
+            <input id="p-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="p-affil">Affiliation <span aria-hidden="true">*</span> <span class="hint">Institution, laboratory, or company.</span></label>
+            <input id="p-affil" name="affiliation" type="text" autocomplete="organization" required>
+          </div>
+          <fieldset class="field">
+            <legend>Sector <span aria-hidden="true">*</span></legend>
+            <label class="check"><input type="radio" name="sector" value="Academia" required> Academia</label>
+            <label class="check"><input type="radio" name="sector" value="Industry"> Industry</label>
+            <label class="check"><input type="radio" name="sector" value="National laboratory / government"> National laboratory or government</label>
+            <label class="check"><input type="radio" name="sector" value="Other"> Other</label>
+          </fieldset>
+          <div class="field">
+            <label for="p-stage">Career stage</label>
+            <select id="p-stage" name="stage">
+              <option value="">Select</option>
+              <option>Undergraduate student</option>
+              <option>Graduate student</option>
+              <option>Postdoctoral researcher</option>
+              <option>Faculty or staff scientist</option>
+              <option>Industry</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="p-coauthors">Co-authors <span class="hint">Names and affiliations, separated by semicolons.</span></label>
+            <input id="p-coauthors" name="coauthors" type="text">
+          </div>
+          <div class="field">
+            <label for="p-title">Poster title <span aria-hidden="true">*</span></label>
+            <input id="p-title" name="title" type="text" required>
+          </div>
+          <div class="field">
+            <label for="p-topic">Topic area</label>
+            <select id="p-topic" name="topic">
+              <option value="">Select</option>
+              <option>Light engines and holography</option>
+              <option>Projection computation and inverse design</option>
+              <option>Photochemistry and resin design</option>
+              <option>Process monitoring, metrology, and control</option>
+              <option>Scale, throughput, and production</option>
+              <option>Materials beyond acrylates</option>
+              <option>Biofabrication</option>
+              <option>Open hardware, reproducibility, and education</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="p-abstract">Abstract <span aria-hidden="true">*</span> <span class="hint">Up to 250 words. <span id="p-count" aria-live="polite">0 words</span></span></label>
+            <textarea id="p-abstract" name="abstract" rows="9" required></textarea>
+          </div>
+          <fieldset class="field">
+            <legend>Also</legend>
+            <label class="check"><input type="checkbox" name="demo" value="yes"> I would like bench space and power for a live demonstration</label>
+            <label class="check"><input type="checkbox" name="inperson" value="yes" required> The presenting author will attend the Friday symposium in person <span aria-hidden="true">*</span></label>
+          </fieldset>
+          <button class="btn btn--primary" type="submit" style="width:100%;justify-content:center">Submit abstract</button>
+          <p class="form__status" id="poster-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </div>
   </div>
