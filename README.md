@@ -6,7 +6,7 @@ No build step, no dependencies — plain HTML, one stylesheet, two small scripts
 ```
 index.html      Home — hero, organizers strip, important dates, about, themes, program at a
                 glance, speakers, venue, organizing committee, sponsors
-program.html    Program overview table, Day 1 schedule, Day 2 build workshop, speakers, FAQ
+program.html    Program overview table, Day 1 build workshop (Thu), Day 2 symposium (Fri), speakers, FAQ
 attend.html     Pre-registration + fee table, important dates, call for posters, workshop
                 application, venue & travel (incl. accessibility), suggestions, sponsorship, contact
 archive.html    Past symposia — full 2025 program and speaker lineup
@@ -60,9 +60,9 @@ Google Form (as in 2025), replace the `<form>` block with a link to it.
 
 These were inferred from the planning documents and need a real decision:
 
-- **Dates.** Thursday 4 – Friday 5 February 2027 throughout, from the `VAM27@Berkeley`
+- **Dates.** Thursday 4 February (OpenCAL build workshop) and Friday 5 February (symposium), 2027. Originally from the `VAM27@Berkeley`
   brainstorm. Confirm against the final SPIE Photonics West 2027 dates.
-- **Venue.** Day 1: The Gateway, Room 5340. Day 2: CITRIS Invention Lab, Sutardja Dai Hall.
+- **Venue.** Thursday build workshop: CITRIS Invention Lab, Sutardja Dai Hall. Friday symposium: The Gateway, Room 5340.
   Confirm the Gateway street address and accessibility wording once the room booking is final.
 - **Contact address.** Currently `twaddell@berkeley.edu` in the footer and mailto links.
   A group alias would age better — one find-and-replace across the four HTML files.

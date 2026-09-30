@@ -68,4 +68,45 @@
     setInterval(tick, 3600000);
   }
 
+
+  /* ----------------------------------- nav highlight follows the section */
+  // Several nav items point into the same page (Program + Speakers, Attend + Venue).
+  // Underline the one whose section is on screen; fall back to the page's own link.
+  if (links) {
+    var here = location.pathname.split("/").pop() || "index.html";
+    var items = [];
+    links.querySelectorAll("a:not(.btn)").forEach(function (a) {
+      var url = new URL(a.getAttribute("href"), location.href);
+      if ((url.pathname.split("/").pop() || "index.html") !== here) return;
+      var id = url.hash.slice(1);
+      items.push({ a: a, el: id ? document.getElementById(id) : null });
+    });
+    if (items.length) {
+      var pageLink = items.filter(function (i) { return !i.el; })[0];
+      var sectioned = items.filter(function (i) { return i.el; });
+      var header = document.querySelector(".site-header");
+      var spy = function () {
+        var line = (header ? header.offsetHeight : 70) + 24;
+        var active = null;
+        sectioned.forEach(function (i) {
+          var r = i.el.getBoundingClientRect();
+          if (r.top <= line && r.bottom > line) active = i;
+        });
+        if (!active) active = pageLink || null;
+        items.forEach(function (i) {
+          if (i === active) i.a.setAttribute("aria-current", "page");
+          else i.a.removeAttribute("aria-current");
+        });
+      };
+      var queued = false;
+      window.addEventListener("scroll", function () {
+        if (queued) return; queued = true;
+        requestAnimationFrame(function () { queued = false; spy(); });
+      }, { passive: true });
+      window.addEventListener("hashchange", spy);
+      window.addEventListener("load", spy);
+      spy();
+    }
+  }
+
 })();
