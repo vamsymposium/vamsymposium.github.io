@@ -125,10 +125,10 @@ Light only; every colour is painted explicitly.
 | `gallery-holovam-benchy.jpg` | Álvarez-Castaño et al., *Nat. Commun.* 2025, Fig. 6 (crop) | CC BY 4.0 |
 | `gallery-emvp-lattice.jpg` | Tisato et al., *Nat. Commun.* 2025, Fig. 2 (crop) | CC BY 4.0 |
 | `venue-berkeley.jpg` | Memorial Glade, Wikimedia Commons (Firstcultural) | CC0 |
+| `2025-group.jpg`, `2025-panel-industrial.jpg`, `2025-plenary-device.jpg` | VAM Symposium 2025, Helen Diller Anchor House (organizers' photos; brightened and color-balanced for the web) | Symposium |
 | `speakers/hayden-taylor.jpg` | me.berkeley.edu faculty page | Berkeley ME |
 
-Replace the OpenCAL shots with your own lab photography when you have it — a photo of
-the room full of people from 2025 would be the ideal hero.
+The 2025 group photo is on the home page (About) and the archive page. Replace the OpenCAL hero with your own lab photography when you have it.
 
 ## Editing
 
