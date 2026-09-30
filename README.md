@@ -31,22 +31,30 @@ Then open <http://localhost:8000>. Any static server works; there is nothing to 
 
 ## Deployment
 
-**Live:** <https://twaddellberkeley.github.io/vam-symposium/>
-**Repo:** <https://github.com/twaddellberkeley/vam-symposium> (owner `twaddellberkeley`,
-twaddell@berkeley.edu). GitHub Pages serves `main` from the repo root; `.nojekyll` keeps
-`assets/` verbatim. Every push to `main` redeploys in about a minute.
+**Live:** <https://vamsymposium.github.io/>
+**Repo:** <https://github.com/vamsymposium/vamsymposium.github.io>, in the `vamsymposium` GitHub
+organization (owner: `twaddellberkeley`, twaddell@berkeley.edu). The repo name is what makes the
+address the bare `vamsymposium.github.io`; do not rename it. GitHub Pages serves `main` from the
+repo root; `.nojekyll` keeps `assets/` verbatim. Every push to `main` redeploys in about a minute.
 
 ```bash
 git add -A && git commit -m "Update program" && git push
 ```
 
+To hand the site to future organizers, invite them to the `vamsymposium` organization
+(github.com/orgs/vamsymposium/people) rather than to anyone's personal account.
+
+**Old address.** The site lived at `twaddellberkeley.github.io/vam-symposium` until 2026-09-30.
+That address is now a separate redirect repo (github.com/twaddellberkeley/vam-symposium) that
+forwards every page and `#section` link here. Keep it in place while old links circulate.
+
 This folder is its own git repo (nested inside the `claude` workspace, which ignores it).
 Its `credential.helper` is pinned to the `twaddellberkeley` gh login so pushes route to the
 right account even though `taylorDrover` is the machine's active gh account.
 
-For a custom domain (e.g. `vamsymposium.org`): add a `CNAME` file containing the bare domain,
-point a DNS `CNAME` record at `twaddellberkeley.github.io`, then enable "Enforce HTTPS" in
-Settings → Pages. A `berkeley.edu` subdomain would instead go through campus IT.
+For a custom domain later (e.g. `vamsymposium.org`, unregistered as of 2026-09-30): add a `CNAME`
+file containing the bare domain, point a DNS `CNAME` record at `vamsymposium.github.io`, then
+enable "Enforce HTTPS" in Settings → Pages. A `berkeley.edu` subdomain would go through campus IT.
 
 ## Registration and poster forms
 
