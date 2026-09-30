@@ -176,7 +176,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* --------------------------------------------------------------- stats -- */
 
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .stat { background: var(--surface); padding: 1.3rem 1.1rem; }
 .stat__num { font-size: clamp(1.7rem, 3.4vw, 2.3rem); font-weight: 700; line-height: 1; color: var(--navy); letter-spacing: -.02em; }
 .stat__label { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: .5rem; font-weight: 600; }
@@ -402,3 +402,13 @@ li::marker { color: var(--gold-2); }
   .gform--poster .gform__frame { height: 3120px; }
 }
 .gform__alt { margin: 0; padding: .7rem 1rem; border-top: 1px solid var(--line); background: var(--bg-alt); text-align: center; }
+
+/* ------------------------------------------------ "Is this for you?" strip --- */
+.fit { list-style: none; margin: 0; padding: 0; display: grid; gap: .1rem; }
+.fit li { padding: .85rem 0 .85rem 1.9rem; position: relative; border-bottom: 1px solid var(--line); line-height: 1.5; }
+.fit li:last-child { border-bottom: 0; }
+.fit li::before { content: ""; position: absolute; left: .2rem; top: 1.05rem; width: .9rem; height: .5rem; border-left: 2.5px solid var(--gold-2); border-bottom: 2.5px solid var(--gold-2); transform: rotate(-45deg); }
+.fit b { color: var(--navy); }
+.tag--link { text-decoration: none; color: var(--navy-3); font-size: .8rem; padding: .3rem .7rem; }
+.tag--link:hover { background: #fff; border-color: var(--gold); color: var(--navy); }
+@media (max-width: 560px) { .hide-sm { display: none; } }
