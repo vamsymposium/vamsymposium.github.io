@@ -41,20 +41,19 @@ For a custom domain (e.g. `vamsymposium.org`): add a `CNAME` file containing the
 point a DNS `CNAME` record at `twaddellberkeley.github.io`, then enable "Enforce HTTPS" in
 Settings → Pages. A `berkeley.edu` subdomain would instead go through campus IT.
 
-## Wiring up the interest form
+## Registration and poster forms
 
-The form on `attend.html` works out of the box: with no endpoint configured it opens a
-pre-filled email to the organisers, so it is never a dead end. To collect submissions
-properly, edit the inline config block near the bottom of `attend.html`:
+Both forms are Google Forms owned by **twaddell@berkeley.edu**, linked from `attend.html`:
 
-```js
-window.VAM_FORM_ENDPOINT = "https://formspree.io/f/XXXXXXXX";
-window.VAM_FORM_EMAIL    = "vamsymposium@berkeley.edu";
-```
+| Form | Responder link | Edit in Google Forms |
+|---|---|---|
+| Pre-registration | https://docs.google.com/forms/d/e/1FAIpQLSdphQWlfyHK8mSvoroDWIIAPFe4vAFPM2Nku5CkmW-atlaVXA/viewform | https://docs.google.com/forms/d/1AryjLL9UpmjBoH4g7jthHODuPE_P6ud9vcS_Tb4wCyg/edit |
+| Poster abstracts | https://docs.google.com/forms/d/e/1FAIpQLSdgiftfuF7rBsifFFirlx-5glfGygvzDd56k4T7Sw8a80Ndgg/viewform | https://docs.google.com/forms/d/1SXJAd21tYuf1LOO4_Kd2VvRWTJSZisfmztKQvHW-fJg/edit |
 
-It POSTs JSON with `name`, `email`, `affiliation`, `interest`, `notes` — compatible with
-Formspree, Netlify Forms, or a Google Apps Script web app. If you would rather use a
-Google Form (as in 2025), replace the `<form>` block with a link to it.
+Responses collect in each form's **Responses** tab; use "Link to Sheets" there for a spreadsheet,
+and share the form with co-organizers as editors. Both accept responses from anyone with the link
+(no Google sign-in). To close a form, turn off "Accepting responses" rather than deleting it.
+`assets/js/form.js` is the retired on-site form handler and is no longer loaded.
 
 ## Before this goes live — things only you can confirm
 

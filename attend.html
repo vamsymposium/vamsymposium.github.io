@@ -73,40 +73,10 @@
       </div>
 
       <div class="card">
-        <form class="form" id="interest-form" novalidate>
-          <div class="field">
-            <label for="f-name">Name <span aria-hidden="true">*</span></label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="f-email">Email <span aria-hidden="true">*</span></label>
-            <input id="f-email" name="email" type="email" autocomplete="email" required>
-          </div>
-          <div class="field">
-            <label for="f-affil">Affiliation <span aria-hidden="true">*</span> <span class="hint">Institution, laboratory, or company.</span></label>
-            <input id="f-affil" name="affiliation" type="text" autocomplete="organization" required>
-          </div>
-          <fieldset class="field">
-            <legend>Sector <span aria-hidden="true">*</span></legend>
-            <label class="check"><input type="radio" name="sector" value="Academia" required> Academia</label>
-            <label class="check"><input type="radio" name="sector" value="Industry"> Industry</label>
-            <label class="check"><input type="radio" name="sector" value="National laboratory / government"> National laboratory or government</label>
-            <label class="check"><input type="radio" name="sector" value="Other"> Other</label>
-          </fieldset>
-          <fieldset class="field">
-            <legend>I am interested in</legend>
-            <label class="check"><input type="checkbox" name="interest" value="Friday symposium (in person)" checked> Friday symposium, in person</label>
-            <label class="check"><input type="checkbox" name="interest" value="Friday symposium (virtual)"> Friday symposium, virtual</label>
-            <label class="check"><input type="checkbox" name="interest" value="Thursday OpenCAL build workshop"> Thursday OpenCAL build workshop</label>
-            <label class="check"><input type="checkbox" name="interest" value="Presenting a poster"> Presenting a poster <span class="hint">Submit the abstract in the <a href="#posters">call for posters</a>.</span></label>
-          </fieldset>
-          <div class="field">
-            <label for="f-notes">Comments <span class="hint">Topics of interest, speaker suggestions, dietary or accessibility requirements.</span></label>
-            <textarea id="f-notes" name="notes" rows="3"></textarea>
-          </div>
-          <button class="btn btn--primary" type="submit" style="width:100%;justify-content:center">Pre-register</button>
-          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
+        <h3>Pre-registration form</h3>
+        <p>Takes about a minute. We ask for your name, email, affiliation, sector, and which parts of the symposium interest you, plus space for dietary or accessibility requirements and speaker suggestions.</p>
+        <a class="btn btn--primary mt-1" href="https://docs.google.com/forms/d/e/1FAIpQLSdphQWlfyHK8mSvoroDWIIAPFe4vAFPM2Nku5CkmW-atlaVXA/viewform" target="_blank" rel="noopener" style="width:100%;justify-content:center">Open the pre-registration form</a>
+        <p class="small mt-1">Opens in Google Forms. No Google account is needed.</p>
       </div>
     </div>
   </div>
@@ -168,78 +138,14 @@
         </ul>
         <div class="callout mt-2">
           <h3>Live demonstrations</h3>
-          <p>Bench space and power can usually be provided next to the poster boards for hardware demonstrations. Tick the demonstration box on the form if you plan to bring equipment.</p>
+          <p>Bench space and power can usually be provided next to the poster boards for hardware demonstrations. Tick the live demonstration option on the submission form if you plan to bring equipment.</p>
         </div>
       </div>
       <div class="card">
         <h3>Abstract submission</h3>
-        <form class="form" id="poster-form" novalidate>
-          <div class="field">
-            <label for="p-name">Presenting author <span aria-hidden="true">*</span></label>
-            <input id="p-name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="p-email">Email <span aria-hidden="true">*</span></label>
-            <input id="p-email" name="email" type="email" autocomplete="email" required>
-          </div>
-          <div class="field">
-            <label for="p-affil">Affiliation <span aria-hidden="true">*</span> <span class="hint">Institution, laboratory, or company.</span></label>
-            <input id="p-affil" name="affiliation" type="text" autocomplete="organization" required>
-          </div>
-          <fieldset class="field">
-            <legend>Sector <span aria-hidden="true">*</span></legend>
-            <label class="check"><input type="radio" name="sector" value="Academia" required> Academia</label>
-            <label class="check"><input type="radio" name="sector" value="Industry"> Industry</label>
-            <label class="check"><input type="radio" name="sector" value="National laboratory / government"> National laboratory or government</label>
-            <label class="check"><input type="radio" name="sector" value="Other"> Other</label>
-          </fieldset>
-          <div class="field">
-            <label for="p-stage">Career stage</label>
-            <select id="p-stage" name="stage">
-              <option value="">Select</option>
-              <option>Undergraduate student</option>
-              <option>Graduate student</option>
-              <option>Postdoctoral researcher</option>
-              <option>Faculty or staff scientist</option>
-              <option>Industry</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="p-coauthors">Co-authors <span class="hint">Names and affiliations, separated by semicolons.</span></label>
-            <input id="p-coauthors" name="coauthors" type="text">
-          </div>
-          <div class="field">
-            <label for="p-title">Poster title <span aria-hidden="true">*</span></label>
-            <input id="p-title" name="title" type="text" required>
-          </div>
-          <div class="field">
-            <label for="p-topic">Topic area</label>
-            <select id="p-topic" name="topic">
-              <option value="">Select</option>
-              <option>Light engines and holography</option>
-              <option>Projection computation and inverse design</option>
-              <option>Photochemistry and resin design</option>
-              <option>Process monitoring, metrology, and control</option>
-              <option>Scale, throughput, and production</option>
-              <option>Materials beyond acrylates</option>
-              <option>Biofabrication</option>
-              <option>Open hardware, reproducibility, and education</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="p-abstract">Abstract <span aria-hidden="true">*</span> <span class="hint">Up to 250 words. <span id="p-count" aria-live="polite">0 words</span></span></label>
-            <textarea id="p-abstract" name="abstract" rows="9" required></textarea>
-          </div>
-          <fieldset class="field">
-            <legend>Also</legend>
-            <label class="check"><input type="checkbox" name="demo" value="yes"> I would like bench space and power for a live demonstration</label>
-            <label class="check"><input type="checkbox" name="inperson" value="yes" required> The presenting author will attend the Friday symposium in person <span aria-hidden="true">*</span></label>
-          </fieldset>
-          <button class="btn btn--primary" type="submit" style="width:100%;justify-content:center">Submit abstract</button>
-          <p class="form__status" id="poster-status" role="status" aria-live="polite"></p>
-        </form>
+        <p>Submit through the online form. You will need the presenting author&rsquo;s details, any co-authors, a poster title, a topic area, and an abstract of up to 250 words.</p>
+        <a class="btn btn--primary mt-1" href="https://docs.google.com/forms/d/e/1FAIpQLSdgiftfuF7rBsifFFirlx-5glfGygvzDd56k4T7Sw8a80Ndgg/viewform" target="_blank" rel="noopener" style="width:100%;justify-content:center">Submit a poster abstract</a>
+        <p class="small mt-1">Opens in Google Forms. No Google account is needed. Abstracts are reviewed as they arrive; the deadline is Friday, January 8, 2027.</p>
       </div>
     </div>
   </div>
@@ -458,15 +364,7 @@
   </div>
 </footer>
 
-<script>
-  /* Where the pre-registration form sends its data.
-     Leave null and the form opens a pre-filled email instead.
-     Set to a Formspree / Google Apps Script / Netlify endpoint to collect
-     submissions. See README.md. */
-  window.VAM_FORM_ENDPOINT = null;
-  window.VAM_FORM_EMAIL = "twaddell@berkeley.edu";
-</script>
-<script src="assets/js/form.js" defer></script>
+
 <script src="assets/js/site.js" defer></script>
 </body>
 </html>
