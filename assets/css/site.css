@@ -389,3 +389,14 @@ li::marker { color: var(--gold-2); }
 .photo-wide img { width: 100%; aspect-ratio: 2.4 / 1; object-fit: cover; }
 .photo-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 .photo-wide figcaption, .photo-card figcaption { padding: .5rem .85rem; font-size: .76rem; color: var(--faint); }
+
+/* ------------------------------------------------ embedded Google Forms --- */
+.gform { max-width: 760px; margin: clamp(2rem, 4vw, 3rem) auto 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); overflow: hidden; scroll-margin-top: 84px; }
+.gform__frame { display: block; width: 100%; border: 0; background: #fff; }
+.gform--prereg .gform__frame { height: 1640px; }
+.gform--poster .gform__frame { height: 2780px; }
+@media (max-width: 560px) {
+  .gform--prereg .gform__frame { height: 1820px; }
+  .gform--poster .gform__frame { height: 3120px; }
+}
+.gform__alt { margin: 0; padding: .7rem 1rem; border-top: 1px solid var(--line); background: var(--bg-alt); text-align: center; }
