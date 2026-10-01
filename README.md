@@ -48,9 +48,8 @@ To hand the site to future organizers, invite them to the `vamsymposium` organiz
 That address is now a separate redirect repo (github.com/twaddellberkeley/vam-symposium) that
 forwards every page and `#section` link here. Keep it in place while old links circulate.
 
-This folder is its own git repo (nested inside the `claude` workspace, which ignores it).
-Its `credential.helper` is pinned to the `twaddellberkeley` gh login so pushes route to the
-right account even though `taylorDrover` is the machine's active gh account.
+This folder is its own git repo. Its `credential.helper` is pinned to the `twaddellberkeley`
+gh login, so pushes always go out under that account.
 
 For a custom domain later (e.g. `vamsymposium.org`, unregistered as of 2026-09-30): add a `CNAME`
 file containing the bare domain, point a DNS `CNAME` record at `vamsymposium.github.io`, then
