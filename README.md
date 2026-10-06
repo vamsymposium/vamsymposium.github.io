@@ -11,7 +11,7 @@ program.html    Overview table, Thursday build workshop (incl. how to apply), Fr
 speakers.html   2027 speakers (coming soon), suggest a speaker or session
 posters.html    Call for posters with the embedded Google Form
 venue.html      Venue, travel, virtual attendance, visas, hotels, meals, photography
-register.html   Pre-registration (embedded Google Form), fees, students, code of conduct
+register.html   Registration (embedded Google Form), fees, students, code of conduct
 archive.html    Past symposia: the 2025 program, speakers, and photos
 attend.html     Redirect only: old links (and emails already sent) forward to the new pages
 assets/         css, js, images, and the 2025 schedule PDF
@@ -61,11 +61,11 @@ All three forms are Google Forms owned by **twaddell@berkeley.edu**, linked from
 
 | Form | Responder link | Edit in Google Forms |
 |---|---|---|
-| Pre-registration | https://docs.google.com/forms/d/e/1FAIpQLSdphQWlfyHK8mSvoroDWIIAPFe4vAFPM2Nku5CkmW-atlaVXA/viewform | https://docs.google.com/forms/d/1AryjLL9UpmjBoH4g7jthHODuPE_P6ud9vcS_Tb4wCyg/edit |
+| Registration | https://docs.google.com/forms/d/e/1FAIpQLSdphQWlfyHK8mSvoroDWIIAPFe4vAFPM2Nku5CkmW-atlaVXA/viewform | https://docs.google.com/forms/d/1AryjLL9UpmjBoH4g7jthHODuPE_P6ud9vcS_Tb4wCyg/edit |
 | Poster abstracts | https://docs.google.com/forms/d/e/1FAIpQLSdgiftfuF7rBsifFFirlx-5glfGygvzDd56k4T7Sw8a80Ndgg/viewform | https://docs.google.com/forms/d/1SXJAd21tYuf1LOO4_Kd2VvRWTJSZisfmztKQvHW-fJg/edit |
 | Build workshop applications | https://docs.google.com/forms/d/e/1FAIpQLSfJH9TW6Ykj2kRQXmYodmYkzTBW5LFRcv1CZpiKj_GOWprLxg/viewform | https://docs.google.com/forms/d/16HjEOJHrXBa0kBcFS6QWZJjU-p63jLkGT4r_MvIbYtw/edit |
 
-Pre-registration and posters are embedded on their pages; the workshop application opens from `program.html#apply`.
+Registration and posters are embedded on their pages; the workshop application opens from `program.html#apply`.
 Responses collect in each form's **Responses** tab; use "Link to Sheets" there for a spreadsheet,
 and share the form with co-organizers as editors. All accept responses from anyone with the link
 (no Google sign-in). To close a form, turn off "Accepting responses" rather than deleting it.

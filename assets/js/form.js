@@ -40,10 +40,10 @@
     ].join("\n");
     var to = window.VAM_FORM_EMAIL || "";
     var href = "mailto:" + to +
-      "?subject=" + encodeURIComponent("VAM Symposium 2027 pre-registration") +
+      "?subject=" + encodeURIComponent("VAM Symposium 2027 registration") +
       "&body=" + encodeURIComponent(body);
     window.location.href = href;
-    say("Your email client will open with the details filled in. Press send to complete pre-registration.", "ok");
+    say("Your email client will open with the details filled in. Press send to complete registration.", "ok");
   }
 
   form.addEventListener("submit", function (e) {
